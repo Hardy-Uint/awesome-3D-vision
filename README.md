@@ -41,3 +41,8 @@
 # 三维重建
 
 # Multi-view Stereo
+## paper
+
+1、[Multi-view stereo: A tutorial](https://www.mendeley.com/catalogue/multiview-stereo-tutorial/)
+
+
