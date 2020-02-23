@@ -2,10 +2,6 @@
 
 3D computer vision incuding SLAM，VSALM，Deep Learning，Structured light，Stereo，Three-dimensional reconstruction，Computer vision，Machine Learning and so on
 
-# awesome-3D-vision
-
-3D computer vision incuding SLAM，VSALM，Deep Learning，Structured light，Stereo，Three-dimensional reconstruction，Computer vision，Machine Learning and so on
-
 # 介绍
 
 > 公众号：3D视觉工坊
