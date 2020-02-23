@@ -4,11 +4,13 @@
 
 # 介绍
 
-> 公众号：3D视觉工坊
+> 公众号：[3D视觉工坊](https://mp.weixin.qq.com/s?__biz=MzU1MjY4MTA1MQ==&mid=100001887&idx=1&sn=d1d29416a887f92c666c4d8da01c7f1b&chksm=7bff236b4c88aa7da9ea5edc38359bdbf512e92a3edc3dc4a44f99555c85937eb902962ac91a&mpshare=1&scene=1&srcid=&sharer_sharetime=1582471688137&sharer_shareid=2a56ab7364087d571a74077bf58c76e9&key=1327fb3ae23a7b4fb0863bdc5284f12313e7679ecac46c347760b4330c8aee5c3f1aa2c9fd43366b49a849afe1eaa365da8bd2828badbf1d8d180cbfbb182f3215e83c5003c6e95e83cac358667705c4&ascene=1&uin=MjI2NDgwMzIyNA%3D%3D&devicetype=Windows+10&version=6208006f&lang=zh_CN&exportkey=Ac8ivQDY5xKVbfRdm7C8tm8%3D&pass_ticket=JmxZMsPv8Y8YuvK4VpdxGJj4eLlx4Eifqi%2FbgKfKtyEoGgU%2FabH6lD3tKOD%2Bsyb7)
 >
 > 主要关注：3D视觉算法、SLAM、vSLAM、计算机视觉、深度学习、自动驾驶、图像处理以及技术干货分享
 >
 > 运营者和嘉宾介绍：运营者来自国内一线大厂的算法工程师，深研3D视觉、深度学习、图像处理、自动驾驶、vSLAM等领域，特邀嘉宾包括国内外知名高校的博士硕士，旷视、商汤、百度、阿里等就职的算法大佬，欢迎一起交流学习
+
+
 
 # SLAM
 
@@ -218,3 +220,23 @@
 - [Awesome 3D reconstruction list](https://github.com/openMVG/awesome_3DReconstruction_list)
 
 - [Multi-View Stereo Reconstruction](http://vision.middlebury.edu/mview/)
+
+# 深度图补全
+
+1、[HMS-Net: Hierarchical Multi-scale Sparsity-invariant Network for Sparse Depth Completion](https://arxiv.org/abs/1808.08685)
+
+2、[Sparse and noisy LiDAR completion with RGB guidance and uncertainty](https://arxiv.org/abs/1902.05356)
+
+3、[3D LiDAR and Stereo Fusion using Stereo Matching Network with Conditional Cost Volume Normalization](https://arxiv.org/pdf/1904.02917.pdf)
+
+4、[Deep RGB-D Canonical Correlation Analysis For Sparse Depth Completion](https://arxiv.org/pdf/1906.08967.pdf)
+
+5、[Confidence Propagation through CNNs for Guided Sparse Depth Regression](https://arxiv.org/abs/1811.01791)
+
+6、[Learning Guided Convolutional Network for Depth Completion](https://arxiv.org/pdf/1908.01238.pdf)
+
+7、[DFineNet: Ego-Motion Estimation and Depth Refinement from Sparse, Noisy Depth Input with RGB Guidance](http://arxiv.org/abs/1903.06397)
+
+8、[PLIN: A Network for Pseudo-LiDAR Point Cloud Interpolation](https://arxiv.org/abs/1909.07137)
+
+9、[Depth Completion from Sparse LiDAR Data with Depth-Normal Constraints](https://arxiv.org/pdf/1910.06727v1.pdf)
