@@ -2,6 +2,10 @@
 
 3D computer vision incuding SLAM，VSALM，Deep Learning，Structured light，Stereo，Three-dimensional reconstruction，Computer vision，Machine Learning and so on
 
+# awesome-3D-vision
+
+3D computer vision incuding SLAM，VSALM，Deep Learning，Structured light，Stereo，Three-dimensional reconstruction，Computer vision，Machine Learning and so on
+
 # 介绍
 
 > 公众号：3D视觉工坊
@@ -87,7 +91,19 @@
 
 # 深度学习
 
+## Github link
+
+1、[https://github.com/ChristosChristofidis/awesome-deep-learning](https://github.com/ChristosChristofidis/awesome-deep-learning)
+
+2、[https://github.com/endymecy/awesome-deeplearning-resources](https://github.com/endymecy/awesome-deeplearning-resources)
+
+
+
 # 机器学习
+
+## Github link
+
+1、[https://github.com/josephmisiti/awesome-machine-learning](https://github.com/josephmisiti/awesome-machine-learning)
 
 # 3D点云
 
@@ -204,4 +220,5 @@
 - [Floating Scale Surface Reconstruction](http://www.gris.informatik.tu-darmstadt.de/projects/floating-scale-surface-recon/)
 - [Large-Scale Texturing of 3D Reconstructions](http://www.gcc.tu-darmstadt.de/home/proj/texrecon/)
 - [Awesome 3D reconstruction list](https://github.com/openMVG/awesome_3DReconstruction_list)
+
 - [Multi-View Stereo Reconstruction](http://vision.middlebury.edu/mview/)
