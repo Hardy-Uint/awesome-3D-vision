@@ -2,8 +2,6 @@
 
 3D computer vision incuding SLAM，VSALM，Deep Learning，Structured light，Stereo，Three-dimensional reconstruction，Computer vision，Machine Learning and so on
 
-
-
 # 介绍
 
 > 公众号：3D视觉工坊
@@ -147,6 +145,28 @@
 
 # 三维重建
 
+## 3D人脸重建
+
+1、[Nonlinear 3D Face Morphable Model](https://arxiv.org/abs/1804.03786)
+
+2、[On Learning 3D Face Morphable Model from In-the-wild Images](https://arxiv.org/abs/1808.09560)
+
+3、[Cascaded Regressor based 3D Face Reconstruction from a Single Arbitrary View Image](https://arxiv.org/abs/1509.06161v1)
+
+4、[JointFace Alignment and 3D Face Reconstruction](http://xueshu.baidu.com/usercenter/paper/show?paperid=4dcdab9e3941e82563f82009a2ef3125&site=xueshu_se)
+
+5、[Photo-Realistic Facial Details Synthesis From Single Image](https://arxiv.org/pdf/1903.10873.pdf)
+
+6、[FML: Face Model Learning from Videos](https://arxiv.org/pdf/1812.07603.pdf)
+
+7、[Large Pose 3D Face Reconstruction from a Single Image via Direct Volumetric](https://arxiv.org/abs/1703.07834)
+
+8、[Joint 3D Face Reconstruction and Dense Alignment with Position Map Regression Network](https://arxiv.org/pdf/1803.07835.pdf)
+
+9、[Joint 3D Face Reconstruction and Dense Face Alignment from A Single Image with 2D-Assisted Self-Supervised Learning](https://arxiv.org/abs/1903.09359)
+
+10、[Face Alignment Across Large Poses: A 3D Solution](https://arxiv.org/pdf/1511.07212.pdf)
+
 # Multi-view Stereo
 
 ## paper
@@ -184,6 +204,4 @@
 - [Floating Scale Surface Reconstruction](http://www.gris.informatik.tu-darmstadt.de/projects/floating-scale-surface-recon/)
 - [Large-Scale Texturing of 3D Reconstructions](http://www.gcc.tu-darmstadt.de/home/proj/texrecon/)
 - [Awesome 3D reconstruction list](https://github.com/openMVG/awesome_3DReconstruction_list)
-
 - [Multi-View Stereo Reconstruction](http://vision.middlebury.edu/mview/)
-- 
