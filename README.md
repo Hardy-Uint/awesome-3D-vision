@@ -10,8 +10,6 @@
 >
 > 运营者和嘉宾介绍：运营者来自国内一线大厂的算法工程师，深研3D视觉、深度学习、图像处理、自动驾驶、vSLAM等领域，特邀嘉宾包括国内外知名高校的博士硕士，旷视、商汤、百度、阿里等就职的算法大佬，欢迎一起交流学习
 
-
-
 # SLAM
 
 ## Books
@@ -141,6 +139,8 @@
 
 6、[PointNet++: Deep Hierarchical Feature Learning on Point Sets in a Metric Space](https://arxiv.org/abs/1706.02413v1)
 
+
+
 # 结构光
 
 ## Code
@@ -151,9 +151,31 @@
 
 ## 立体匹配
 
-1、[DeepPruner: Learning Efficient Stereo Matching via Differentiable PatchMatch](http://www.researchgate.net/publication/335788330_DeepPruner_Learning_Efficient_Stereo_Matching_via_Differentiable_PatchMatch)
-
-2、[Improved Stereo Matching with Constant Highway Networks and Reflective Confidence Learning](http://www.researchgate.net/publication/320966979_Improved_Stereo_Matching_with_Constant_Highway_Networks_and_Reflective_Confidence_Learning)
+1. [DeepPruner: Learning Efficient Stereo Matching via Differentiable PatchMatch](http://www.researchgate.net/publication/335788330_DeepPruner_Learning_Efficient_Stereo_Matching_via_Differentiable_PatchMatch)
+2. [Improved Stereo Matching with Constant Highway Networks and Reflective Confidence Learning](http://www.researchgate.net/publication/320966979_Improved_Stereo_Matching_with_Constant_Highway_Networks_and_Reflective_Confidence_Learning)
+3. [PMSC: PatchMatch-Based Superpixel Cut for Accurate Stereo Matching](http://140.98.202.196/document/7744590)
+4. [Exact Bias Correction and Covariance Estimation for Stereo Vision](http://openaccess.thecvf.com/content_cvpr_2015/papers/Freundlich_Exact_Bias_Correction_2015_CVPR_paper.pdf)
+5. [Efficient minimal-surface regularization of perspective depth maps in variational stereo](https://www.semanticscholar.org/paper/Efficient-minimal-surface-regularization-of-depth-Graber-Balzer/7579d0c7fd9872ff62bdec99335ce25e9fc3bd6a)
+6. [Event-Driven Stereo Matching for Real-Time 3D Panoramic Vision](https://www.researchgate.net/publication/279512685_Event-Driven_Stereo_Matching_for_Real-Time_3D_Panoramic_Vision)
+7. [Leveraging Stereo Matching with Learning-based Confidence Measures](https://www.researchgate.net/publication/273260542_Leveraging_Stereo_Matching_with_Learning-based_Confidence_Measures)
+8. [Graph Cut based Continuous Stereo Matching using Locally Shared Labels](http://openaccess.thecvf.com/content_cvpr_2014/papers/Taniai_Graph_Cut_based_2014_CVPR_paper.pdf)
+9. [Cross-Scale Cost Aggregation for Stereo Matching](http://de.arxiv.org/pdf/1403.0316)
+10. [Fast Cost-Volume Filtering for Visual Correspondence and Beyond](https://publik.tuwien.ac.at/files/PubDat_202088.pdf)
+11. [Constant Time Weighted Median Filtering for Stereo Matching and Beyond](http://openaccess.thecvf.com/content_iccv_2013/papers/Ma_Constant_Time_Weighted_2013_ICCV_paper.pdf)
+12. [A non-local cost aggregation method for stereo matching](http://fcv2011.ulsan.ac.kr/files/announcement/592/A%20Non-Local%20Aggregation%20Method%20Stereo%20Matching.pdf)
+13. [On building an accurate stereo matching system on graphics hardware](http://nlpr-web.ia.ac.cn/2011papers/gjhy/gh75.pdf)
+14. [Efficient large-scale stereo matching](http://www.cs.toronto.edu/~urtasun/publications/geiger_et_al_accv10.pdf)
+15. [Accurate, dense, and robust multiview stereopsis](https://www.researchgate.net/publication/221364612_Accurate_Dense_and_Robust_Multi-View_Stereopsis)
+16. [A constant-space belief propagation algorithm for stereo matching](http://vision.ai.illinois.edu/publications/yang_cvpr10a.pdf)
+17. [Stereo matching with color-weighted correlation, hierarchical belief propagation, and occlusion handling](https://www.computer.org/csdl/journal/tp/2009/03/ttp2009030492/13rRUxBJhnO)
+18. [Cost aggregation and occlusion handling with WLS in stereo matching](https://www.researchgate.net/publication/51406942_Cost_Aggregation_and_Occlusion_Handling_With_WLS_in_Stereo_Matching)
+19. [Stereo matching: An outlier confidence approach](http://www.cse.cuhk.edu.hk/leojia/all_final_papers/stereo_eccv08.pdf)
+20. [ A region based stereo matching algorithm using cooperative optimization](http://vision.middlebury.edu/stereo/eval/papers/CORegion.pdf)
+21. [Multi-view stereo for community photo collections](https://www.semanticscholar.org/paper/Multi-View-Stereo-for-Community-Photo-Collections-Goesele-Snavely/b59964ff729bbde324af83743cd3cf424ce69758)
+22. [A performance study on different cost aggregation approaches used in real-time stereo matching](https://www.researchgate.net/publication/220659397_A_Performance_Study_on_Different_Cost_Aggregation_Approaches_Used_in_Real-Time_Stereo_Matching)
+23. [Evaluation of cost functions for stereo matching]()
+24. [Adaptive support-weight approach for correspondence search]()
+25. [Segment-based stereo matching using belief propagation and a self-adapting dissimilarity measure]()
 
 
 
