@@ -152,7 +152,6 @@
 ## Papers
 
 1. [Structured-light 3D surface imaging: a tutorial](https://link.zhihu.com/?target=http%3A//www.rtbasics.com/Downloads/IEEE_structured_light.pdf)
-2. 
 
 # 立体视觉
 
