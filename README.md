@@ -57,8 +57,6 @@
 - [Computer Vision: Theory and Application](http://szeliski.org/Book/) - Rick Szeliski 2010
 - [Computer Vision: A Modern Approach (2nd edition)](http://www.amazon.com/Computer-Vision-Modern-Approach-2nd/dp/013608592X/ref=dp_ob_title_bk) - David Forsyth and Jean Ponce 2011
 - [Multiple View Geometry in Computer Vision](http://www.robots.ox.ac.uk/~vgg/hzbook/) - Richard Hartley and Andrew Zisserman 2004
-- [Computer Vision](http://www.amazon.com/Computer-Vision-Linda-G-Shapiro/dp/0130307963) - Linda G. Shapiro 2001
-- [Vision Science: Photons to Phenomenology](http://www.amazon.com/Vision-Science-Phenomenology-Stephen-Palmer/dp/0262161834/) - Stephen E. Palmer 1999
 - [Visual Object Recognition synthesis lecture](http://www.morganclaypool.com/doi/abs/10.2200/S00332ED1V01Y201103AIM011) - Kristen Grauman and Bastian Leibe 2011
 - [Computer Vision for Visual Effects](http://cvfxbook.com/) - Richard J. Radke, 2012
 - [High dynamic range imaging: acquisition, display, and image-based lighting](http://www.amazon.com/High-Dynamic-Range-Imaging-Second/dp/012374914X) - Reinhard, E., Heidrich, W., Debevec, P., Pattanaik, S., Ward, G., Myszkowski, K 2010
@@ -111,8 +109,6 @@
 
 3、[Revisiting Point Cloud Classification: A New Benchmark Dataset and Classification Model on Real-World Data](https://arxiv.org/pdf/1908.04616.pdf)
 
-
-
 ## 点云匹配
 
 1、[An ICP variant using a point-to-line metric](https://authors.library.caltech.edu/18274/1/Censi2008p84782008_Ieee_International_Conference_On_Robotics_And_Automation_Vols_1-9.pdf)
@@ -139,13 +135,24 @@
 
 6、[PointNet++: Deep Hierarchical Feature Learning on Point Sets in a Metric Space](https://arxiv.org/abs/1706.02413v1)
 
-
-
 # 结构光
 
 ## Code
 
 1、[https://github.com/jakobwilm/slstudio](https://github.com/jakobwilm/slstudio)
+
+## Lectures
+
+1. [**Build Your Own 3D Scanner: Optical Triangulation for Beginners**](https://link.zhihu.com/?target=http%3A//mesh.brown.edu/byo3d/)
+
+## Video
+
+1. [**CS6320 3D Computer Vision**, Spring 2015](http://www.sci.utah.edu/~gerig/CS6320-S2015/CS6320_3D_Computer_Vision.html)
+
+## Papers
+
+1. [Structured-light 3D surface imaging: a tutorial](https://link.zhihu.com/?target=http%3A//www.rtbasics.com/Downloads/IEEE_structured_light.pdf)
+2. 
 
 # 立体视觉
 
@@ -203,7 +210,20 @@
 
 10、[Face Alignment Across Large Poses: A 3D Solution](https://arxiv.org/pdf/1511.07212.pdf)
 
+
+
 # Multi-view Stereo
+
+> 多视角立体视觉（Multiple View Stereo，MVS）是对立体视觉的推广，能够在多个视角（从外向里）观察和获取景物的图像，并以此完成匹配和深度估计。某种意义上讲，SLAM/SFM其实和MVS是类似的，只是前者是摄像头运动，后者是多个摄像头视角。也可以说，前者可以在环境里面“穿行”，而后者更像在环境外“旁观”。
+>
+> 多视角立体视觉的pipelines如下：
+>
+> 1. 收集图像；
+> 2. 针对每个图像计算相机参数；
+> 3. 从图像集和相应的摄像机参数重建场景的3D几何图形；
+> 4. 可选择地重建场景的形状和纹理颜色。
+
+参考链接：[多视角立体视觉MVS简介](https://zhuanlan.zhihu.com/p/73748124)
 
 ## paper
 
