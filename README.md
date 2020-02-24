@@ -137,6 +137,10 @@
 
 # 结构光
 
+> 先扫描结构光
+>
+> 面阵结构光
+
 ## Code
 
 1、[https://github.com/jakobwilm/slstudio](https://github.com/jakobwilm/slstudio)
@@ -152,6 +156,24 @@
 ## Papers
 
 1. [Structured-light 3D surface imaging: a tutorial](https://link.zhihu.com/?target=http%3A//www.rtbasics.com/Downloads/IEEE_structured_light.pdf)
+2. [High-speed 3D image acquisition using coded structured light projection](https://www.researchgate.net/publication/224296439_High-speed_3D_image_acquisition_using_coded_structured_light_projection)
+3. [Accurate 3D measurement using a Structured Light System](https://www.researchgate.net/publication/222500455_Accurate_3D_measurement_using_a_Structured_Light_System)
+4. [Structured light stereoscopic imaging with dynamic pseudo-random patterns  ](https://static.aminer.org/pdf/PDF/000/311/975/a_high_precision_d_object_reconstruction_method_using_a_color.pdf)
+5. [Robust one-shot 3D scanning using loopy belief propagation  ](https://www.researchgate.net/publication/224165371_Robust_one-shot_3D_scanning_using_loopy_belief_propagation)
+6. [Robust Segmentation and Decoding of a Grid Pattern for Structured Light](https://www.semanticscholar.org/paper/Robust-Segmentation-and-Decoding-of-a-Grid-Pattern-Pag%C3%A8s-Salvi/dcbdd608dcdf03b0d0eba662c68915dcfa90e5a5)
+7. [Rapid shape acquisition using color structured light and multi-pass dynamic programming  ](http://ieeexplore.ieee.org/iel5/7966/22019/01024035.pdf?arnumber=1024035)
+8. [Improved stripe matching for colour encoded structured light  ]()
+9. [Absolute phase mapping for one-shot dense pattern projection  ](https://www.researchgate.net/profile/Joaquim_Salvi/publication/224165341_Absolute_phase_mapping_for_one-shot_dense_pattern_projection/links/56ffaee708ae650a64f805dd.pdf)
+10. [3D digital stereophotogrammetry: a practical guide to facial image acquisition  ]()
+11. [Method and apparatus for 3D imaging using light pattern having multiple sub-patterns  ]()
+12. [High speed laser three-dimensional imager  ]()
+13. [Three-dimensional dental imaging method and apparatus having a reflective member  ]()
+14. [3D surface profile imaging method and apparatus using single spectral light condition  ]()
+15. [Three-dimensional surface profile imaging method and apparatus using single spectral light condition]()
+16. [High speed three dimensional imaging method  ]()
+17. [A hand-held photometric stereo camera for 3-D modeling  ]()
+18. [High-resolution, real-time 3D absolute coordinate measurement based on a phase-shifting method  ]()
+19. [A fast three-step phase shifting algorithm  ]()
 
 # 立体视觉
 
@@ -208,8 +230,6 @@
 9、[Joint 3D Face Reconstruction and Dense Face Alignment from A Single Image with 2D-Assisted Self-Supervised Learning](https://arxiv.org/abs/1903.09359)
 
 10、[Face Alignment Across Large Poses: A 3D Solution](https://arxiv.org/pdf/1511.07212.pdf)
-
-
 
 # Multi-view Stereo
 
