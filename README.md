@@ -4,7 +4,7 @@
 
 # 介绍
 
-> 公众号：[3D视觉工坊](https://mp.weixin.qq.com/s?__biz=MzU1MjY4MTA1MQ==&mid=100001887&idx=1&sn=d1d29416a887f92c666c4d8da01c7f1b&chksm=7bff236b4c88aa7da9ea5edc38359bdbf512e92a3edc3dc4a44f99555c85937eb902962ac91a&mpshare=1&scene=1&srcid=&sharer_sharetime=1582471688137&sharer_shareid=2a56ab7364087d571a74077bf58c76e9&key=1327fb3ae23a7b4fb0863bdc5284f12313e7679ecac46c347760b4330c8aee5c3f1aa2c9fd43366b49a849afe1eaa365da8bd2828badbf1d8d180cbfbb182f3215e83c5003c6e95e83cac358667705c4&ascene=1&uin=MjI2NDgwMzIyNA%3D%3D&devicetype=Windows+10&version=6208006f&lang=zh_CN&exportkey=Ac8ivQDY5xKVbfRdm7C8tm8%3D&pass_ticket=JmxZMsPv8Y8YuvK4VpdxGJj4eLlx4Eifqi%2FbgKfKtyEoGgU%2FabH6lD3tKOD%2Bsyb7)
+> 公众号：[3D视觉工坊](https://mp.weixin.qq.com/s?__biz=MzU1MjY4MTA1MQ==&mid=2247484684&idx=1&sn=e812540aee03a4fc54e44d5555ccb843&chksm=fbff2e38cc88a72e180f0f6b0f7b906dd616e7d71fffb9205d529f1238e8ef0f0c5554c27dd7&token=691734513&lang=zh_CN#rd)
 >
 > 主要关注：3D视觉算法、SLAM、vSLAM、计算机视觉、深度学习、自动驾驶、图像处理以及技术干货分享
 >
