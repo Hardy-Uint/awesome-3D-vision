@@ -126,8 +126,6 @@
 
 3、[Revisiting Point Cloud Classification: A New Benchmark Dataset and Classification Model on Real-World Data](https://arxiv.org/pdf/1908.04616.pdf)
 
-
-
 ## 点云匹配
 
 1、[An ICP variant using a point-to-line metric](https://authors.library.caltech.edu/18274/1/Censi2008p84782008_Ieee_International_Conference_On_Robotics_And_Automation_Vols_1-9.pdf)
@@ -203,6 +201,24 @@
 19. [A fast three-step phase shifting algorithm  ]()
 
 ## 立体视觉
+
+### 书籍
+
+1. [机器视觉 Robot Vision]()
+
+### 教程
+
+1. [立体视觉书籍推荐&立体匹配十大概念综述---立体匹配算法介绍](https://zhuanlan.zhihu.com/p/20703577)
+2. [【关于立体视觉的一切】立体匹配成像算法BM，SGBM，GC，SAD一览](https://zhuanlan.zhihu.com/p/32752535)
+3. [StereoVision--立体视觉（1）](https://zhuanlan.zhihu.com/p/30116734)
+4. [StereoVision--立体视觉（2）](https://zhuanlan.zhihu.com/p/30333032)
+5. [StereoVision--立体视觉（3）](https://zhuanlan.zhihu.com/p/30754263)
+6. [StereoVision--立体视觉（4）](https://zhuanlan.zhihu.com/p/31160700)
+7. [StereoVision--立体视觉（5）](https://zhuanlan.zhihu.com/p/31500311)
+
+### 综述
+
+1. [Review of Stereo Vision Algorithms: From Software to Hardware  ]()
 
 ### 立体匹配
 
