@@ -10,14 +10,19 @@
 >
 > 运营者和嘉宾介绍：运营者来自国内一线大厂的算法工程师，深研3D视觉、深度学习、图像处理、自动驾驶、vSLAM等领域，特邀嘉宾包括国内外知名高校的博士硕士，旷视、商汤、百度、阿里等就职的算法大佬，欢迎一起交流学习
 
+# 3D视觉实战代码汇总
+
+1. https://github.com/sunglok/3dv_tutorial(涉及SLAM、多视图几何代码示例)
+
 # SLAM
 
 ## Books
 
-- [State Estimation for Robotic -- A Matrix Lie Group Approach](http://asrl.utias.utoronto.ca/~tdb/bib/barfoot_ser17.pdf) by Timothy D. Barfoot, 2018
+- [视觉SLAM十四讲]() 高翔
+- [机器人学中的状态估计]()
+- [概率机器人]()
 - [Simultaneous Localization and Mapping for Mobile Robots: Introduction and Methods](http://www.igi-global.com/book/simultaneous-localization-mapping-mobile-robots/66380) by Juan-Antonio Fernández-Madrigal and José Luis Blanco Claraco, 2012
 - [Simultaneous Localization and Mapping: Exactly Sparse Information Filters ](http://www.worldscientific.com/worldscibooks/10.1142/8145/)by Zhan Wang, Shoudong Huang and Gamini Dissanayake, 2011
-- [Probabilistic Robotics](http://www.probabilistic-robotics.org/) by Dieter Fox, Sebastian Thrun, and Wolfram Burgard, 2005
 - [An Invitation to 3-D Vision -- from Images to Geometric Models](http://vision.ucla.edu/MASKS/) by Yi Ma, Stefano Soatto, Jana Kosecka and Shankar S. Sastry, 2005
 - [Multiple View Geometry in Computer Vision](http://www.robots.ox.ac.uk/~vgg/hzbook/) by Richard Hartley and Andrew Zisserman, 2004
 - [Numerical Optimization](http://home.agh.edu.pl/~pba/pdfdoc/Numerical_Optimization.pdf) by Jorge Nocedal and Stephen J. Wright, 1999
@@ -48,6 +53,18 @@
 5. [SVO: Semi-Direct Monocular Visual Odometry](https://github.com/uzh-rpg/rpg_svo)
 6. [G2O: General Graph Optimization](https://github.com/RainerKuemmerle/g2o)
 7. [RGBD-SLAM](https://github.com/felixendres/rgbdslam_v2)
+
+| Project                                                      | Language | License                    |
+| ------------------------------------------------------------ | -------- | -------------------------- |
+| [COSLAM](http://drone.sjtu.edu.cn/dpzou/project/coslam.php)  | C++      | GNU General Public License |
+| [DSO-Direct Sparse Odometry](https://github.com/JakobEngel/dso) | C++      | GPLv3                      |
+| [DTSLAM-Deferred Triangulation SLAM](https://github.com/plumonito/dtslam) | C++      | modified BSD               |
+| [LSD-SLAM](https://github.com/tum-vision/lsd_slam/)          | C++/ROS  | GNU General Public License |
+| [MAPLAB-ROVIOLI](https://github.com/ethz-asl/maplab)         | C++/ROS  | Apachev2.0                 |
+| [OKVIS: Open Keyframe-based Visual-Inertial SLAM](https://github.com/ethz-asl/okvis) | C++      | BSD                        |
+| [ORB-SLAM](https://github.com/raulmur/ORB_SLAM2)             | C++      | GPLv3                      |
+| [REBVO - Realtime Edge Based Visual Odometry for a Monocular Camera](https://github.com/JuanTarrio/rebvo) | C++      | GNU General Public License |
+| [SVO semi-direct Visual Odometry](https://github.com/uzh-rpg/rpg_svo) | C++/ROS  | GNU General Public License |
 
 # 计算机视觉
 
@@ -109,6 +126,8 @@
 
 3、[Revisiting Point Cloud Classification: A New Benchmark Dataset and Classification Model on Real-World Data](https://arxiv.org/pdf/1908.04616.pdf)
 
+
+
 ## 点云匹配
 
 1、[An ICP variant using a point-to-line metric](https://authors.library.caltech.edu/18274/1/Censi2008p84782008_Ieee_International_Conference_On_Robotics_And_Automation_Vols_1-9.pdf)
@@ -135,25 +154,33 @@
 
 6、[PointNet++: Deep Hierarchical Feature Learning on Point Sets in a Metric Space](https://arxiv.org/abs/1706.02413v1)
 
-# 结构光
+# 三维重建
+
+## 结构光
 
 > 先扫描结构光
 >
 > 面阵结构光
 
-## Code
+参考链接：[https://zhuanlan.zhihu.com/p/29971801](https://zhuanlan.zhihu.com/p/29971801)
 
-1、[https://github.com/jakobwilm/slstudio](https://github.com/jakobwilm/slstudio)
+### Code
 
-## Lectures
+1. [https://github.com/jakobwilm/slstudio](https://github.com/jakobwilm/slstudio)
+2. [https://github.com/phreax/structured_light](https://github.com/phreax/structured_light)
+3. [https://github.com/nikolaseu/neuvision](https://github.com/nikolaseu/neuvision)
+4. [https://github.com/pranavkantgaur/3dscan](https://github.com/pranavkantgaur/3dscan)
+
+### Lectures
 
 1. [**Build Your Own 3D Scanner: Optical Triangulation for Beginners**](https://link.zhihu.com/?target=http%3A//mesh.brown.edu/byo3d/)
+2. [https://github.com/nikolaseu/thesis](https://github.com/nikolaseu/thesis)
 
-## Video
+### Video
 
 1. [**CS6320 3D Computer Vision**, Spring 2015](http://www.sci.utah.edu/~gerig/CS6320-S2015/CS6320_3D_Computer_Vision.html)
 
-## Papers
+### Papers
 
 1. [Structured-light 3D surface imaging: a tutorial](https://link.zhihu.com/?target=http%3A//www.rtbasics.com/Downloads/IEEE_structured_light.pdf)
 2. [High-speed 3D image acquisition using coded structured light projection](https://www.researchgate.net/publication/224296439_High-speed_3D_image_acquisition_using_coded_structured_light_projection)
@@ -175,9 +202,9 @@
 18. [High-resolution, real-time 3D absolute coordinate measurement based on a phase-shifting method  ]()
 19. [A fast three-step phase shifting algorithm  ]()
 
-# 立体视觉
+## 立体视觉
 
-## 立体匹配
+### 立体匹配
 
 1. [DeepPruner: Learning Efficient Stereo Matching via Differentiable PatchMatch](http://www.researchgate.net/publication/335788330_DeepPruner_Learning_Efficient_Stereo_Matching_via_Differentiable_PatchMatch)
 2. [Improved Stereo Matching with Constant Highway Networks and Reflective Confidence Learning](http://www.researchgate.net/publication/320966979_Improved_Stereo_Matching_with_Constant_Highway_Networks_and_Reflective_Confidence_Learning)
@@ -207,7 +234,191 @@
 
 
 
-# 三维重建
+## SFM
+
+> Incremental SfM
+>
+> Global SfM
+>
+> Hierarchical SfM
+>
+> Multi-Stage SfM
+>
+> Non Rigid SfM
+
+#### Turtorial
+
+1. [Open Source Structure-from-Motion](https://blog.kitware.com/open-source-structure-from-motion-at-cvpr-2015/). M. Leotta, S. Agarwal, F. Dellaert, P. Moulon, V. Rabaud. CVPR 2015 Tutorial [(material)](https://github.com/mleotta/cvpr2015-opensfm).
+2. Large-scale 3D Reconstruction from Images](https://home.cse.ust.hk/~tshenaa/sub/ACCV2016/ACCV_2016_Tutorial.html). T. Shen, J. Wang, T.Fang, L. Quan. ACCV 2016 Tutorial.
+
+#### Incremental SfM
+
+1. [Photo Tourism: Exploring Photo Collections in 3D](http://phototour.cs.washington.edu/Photo_Tourism.pdf). N. Snavely, S. M. Seitz, and R. Szeliski. SIGGRAPH 2006.
+2. [Towards linear-time incremental structure from motion](http://ccwu.me/vsfm/vsfm.pdf). C. Wu. 3DV 2013.
+3. [Structure-from-Motion Revisited](https://demuc.de/papers/schoenberger2016sfm.pdf). Schöenberger, Frahm. CVPR 2016.
+
+#### Global SfM
+
+1. [Combining two-view constraints for motion estimation](http://www.umiacs.umd.edu/users/venu/cvpr01.pdf) V. M. Govindu. CVPR, 2001.
+2. [Lie-algebraic averaging for globally consistent motion estimation](http://www.umiacs.umd.edu/users/venu/cvpr04final.pdf). V. M. Govindu. CVPR, 2004.
+3. [Robust rotation and translation estimation in multiview reconstruction](http://imagine.enpc.fr/~monasse/Stereo/Projects/MartinecPajdla07.pdf). D. Martinec and T. Pajdla. CVPR, 2007.
+4. [Non-sequential structure from motion](http://www.maths.lth.se/vision/publdb/reports/pdf/enqvist-kahl-etal-wovcnnc-11.pdf). O. Enqvist, F. Kahl, and C. Olsson. ICCV OMNIVIS Workshops 2011.
+5. [Global motion estimation from point matches](https://web.math.princeton.edu/~amits/publications/sfm_3dimpvt12.pdf). M. Arie-Nachimson, S. Z. Kovalsky, I. KemelmacherShlizerman, A. Singer, and R. Basri. 3DIMPVT 2012.
+6. [Global Fusion of Relative Motions for Robust, Accurate and Scalable Structure from Motion](https://hal-enpc.archives-ouvertes.fr/hal-00873504). P. Moulon, P. Monasse and R. Marlet. ICCV 2013.
+7. [A Global Linear Method for Camera Pose Registration](http://www.cs.sfu.ca/~pingtan/Papers/iccv13_sfm.pdf). N. Jiang, Z. Cui, P. Tan. ICCV 2013.
+8. [Global Structure-from-Motion by Similarity Averaging](http://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Cui_Global_Structure-From-Motion_by_ICCV_2015_paper.pdf). Z. Cui, P. Tan. ICCV 2015.
+9. [Linear Global Translation Estimation from Feature Tracks](http://arxiv.org/abs/1503.01832) Z. Cui, N. Jiang, C. Tang, P. Tan, BMVC 2015.
+
+#### Hierarchical SfM
+
+1. [Structure-and-Motion Pipeline on a Hierarchical Cluster Tree](http://www.diegm.uniud.it/fusiello/papers/3dim09.pdf). A. M.Farenzena, A.Fusiello, R. Gherardi. Workshop on 3-D Digital Imaging and Modeling, 2009.
+2. [Randomized Structure from Motion Based on Atomic 3D Models from Camera Triplets](https://www.researchgate.net/publication/224579249_Randomized_structure_from_motion_based_on_atomic_3D_models_from_camera_triplets). M. Havlena, A. Torii, J. Knopp, and T. Pajdla. CVPR 2009.
+3. [Efficient Structure from Motion by Graph Optimization](https://dspace.cvut.cz/bitstream/handle/10467/62206/Havlena_stat.pdf?sequence=1&isAllowed=y). M. Havlena, A. Torii, and T. Pajdla. ECCV 2010.
+4. [Hierarchical structure-and-motion recovery from uncalibrated images](http://www.diegm.uniud.it/fusiello/papers/cviu15.pdf). Toldo, R., Gherardi, R., Farenzena, M. and Fusiello, A.. CVIU 2015.
+
+#### Multi-Stage SfM
+
+1. [Parallel Structure from Motion from Local Increment to Global Averaging](https://arxiv.org/abs/1702.08601). S. Zhu, T. Shen, L. Zhou, R. Zhang, J. Wang, T. Fang, L. Quan. arXiv 2017.
+2. [Multistage SFM : Revisiting Incremental Structure from Motion](https://researchweb.iiit.ac.in/~rajvi.shah/projects/multistagesfm/). R. Shah, A. Deshpande, P. J. Narayanan. 3DV 2014. -> [Multistage SFM: A Coarse-to-Fine Approach for 3D Reconstruction](http://arxiv.org/abs/1512.06235), arXiv 2016.
+3. [HSfM: Hybrid Structure-from-Motion](http://openaccess.thecvf.com/content_cvpr_2017/papers/Cui_HSfM_Hybrid_Structure-from-Motion_CVPR_2017_paper.pdf). H. Cui, X. Gao, S. Shen and Z. Hu, ICCV 2017.
+
+#### Non Rigid SfM
+
+1. [Robust Structure from Motion in the Presence of Outliers and Missing Data](http://arxiv.org/abs/1609.02638). G. Wang, J. S. Zelek, J. Wu, R. Bajcsy. 2016.
+
+### Project&code
+
+| Project                                                 | Language | License                                              |
+| ------------------------------------------------------- | -------- | ---------------------------------------------------- |
+| [Bundler](https://github.com/snavely/bundler_sfm)       | C++      | GNU General Public License - contamination           |
+| [Colmap](https://github.com/colmap/colmap)              | C++      | BSD 3-clause license - Permissive                    |
+| [TeleSculptor](https://github.com/Kitware/TeleSculptor) | C++      | BSD 3-Clause license - Permissive                    |
+| [MicMac](https://github.com/micmacIGN)                  | C++      | CeCILL-B                                             |
+| [MVE](https://github.com/simonfuhrmann/mve)             | C++      | BSD 3-Clause license + parts under the GPL 3 license |
+| [OpenMVG](https://github.com/openMVG/openMVG)           | C++      | MPL2 - Permissive                                    |
+| [OpenSfM](https://github.com/mapillary/OpenSfM/)        | Python   | Simplified BSD license - Permissive                  |
+| [TheiaSfM](https://github.com/sweeneychris/TheiaSfM)    | C++      | New BSD license - Permissive                         |
+
+## TOF
+
+#### 教程
+
+1. [ToF技术是什么？和结构光技术又有何区别?](https://zhuanlan.zhihu.com/p/51218791)
+2. [3D相机--TOF相机](https://zhuanlan.zhihu.com/p/85519428)
+
+#### Paper
+
+1. https://arxiv.org/pdf/1511.07212.pdf)
+
+## Multi-view Stereo
+
+> 多视角立体视觉（Multiple View Stereo，MVS）是对立体视觉的推广，能够在多个视角（从外向里）观察和获取景物的图像，并以此完成匹配和深度估计。某种意义上讲，SLAM/SFM其实和MVS是类似的，只是前者是摄像头运动，后者是多个摄像头视角。也可以说，前者可以在环境里面“穿行”，而后者更像在环境外“旁观”。
+>
+> 多视角立体视觉的pipelines如下：
+>
+> 1. 收集图像；
+> 2. 针对每个图像计算相机参数；
+> 3. 从图像集和相应的摄像机参数重建场景的3D几何图形；
+> 4. 可选择地重建场景的形状和纹理颜色。
+
+参考链接：[多视角立体视觉MVS简介](https://zhuanlan.zhihu.com/p/73748124)
+
+### paper
+
+#### 综述
+
+1. [Multi-view stereo: A tutorial](https://www.mendeley.com/catalogue/multiview-stereo-tutorial/)
+2. [State of the Art 3D Reconstruction Techniques](https://docs.google.com/file/d/0B851Hlh7xL0KNGx3X09VcEYzSjg/preview) N. Snavely, Y. Furukawa, CVPR 2014 tutorial slides. [Introduction](http://www.cse.wustl.edu/~furukawa/papers/cvpr2014_tutorial_intro.pdf) [MVS with priors](http://www.cse.wustl.edu/~furukawa/papers/cvpr2014_tutorial_mvs_prior.pdf) - [Large scale MVS](http://www.cse.wustl.edu/~furukawa/papers/cvpr2014_tutorial_large_scale_mvs.pdf)
+
+#### Point cloud computation（点云计算）
+
+1. [Accurate, Dense, and Robust Multiview Stereopsis](http://www.cs.wustl.edu/~furukawa/papers/cvpr07a.pdf). Y. Furukawa, J. Ponce. CVPR 2007. [PAMI 2010](http://www.cs.wustl.edu/~furukawa/papers/pami08a.pdf)
+2. [State of the art in high density image matching](https://www.researchgate.net/publication/263465866_State_of_the_art_in_high_density_image_matching﻿). F. Remondino, M.G. Spera, E. Nocerino, F. Menna, F. Nex . The Photogrammetric Record 29(146), 2014.
+3. [Progressive prioritized multi-view stereo](http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Locher_Progressive_Prioritized_Multi-View_CVPR_2016_paper.pdf). A. Locher, M. Perdoch and L. Van Gool. CVPR 2016.
+4. [Pixelwise View Selection for Unstructured Multi-View Stereo](https://demuc.de/papers/schoenberger2016mvs.pdf). J. L. Schönberger, E. Zheng, M. Pollefeys, J.-M. Frahm. ECCV 2016.
+5. [TAPA-MVS: Textureless-Aware PAtchMatch Multi-View Stereo](https://arxiv.org/pdf/1903.10929.pdf). A. Romanoni, M. Matteucci. ICCV 2019
+
+#### Surface computation & refinements（曲面计算与优化）
+
+1. [Efficient Multi-View Reconstruction of Large-Scale Scenes using Interest Points, Delaunay Triangulation and Graph Cuts](http://www.di.ens.fr/sierra/pdfs/07iccv_a.pdf). P. Labatut, J-P. Pons, R. Keriven. ICCV 2007
+2. [Multi-View Stereo via Graph Cuts on the Dual of an Adaptive Tetrahedral Mesh](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/07/SinhaICCV07.pdf). S. N. Sinha, P. Mordohai and M. Pollefeys. ICCV 2007.
+3. [Towards high-resolution large-scale multi-view stereo](https://www.researchgate.net/publication/221364700_Towards_high-resolution_large-scale_multi-view_stereo).  H.-H. Vu, P. Labatut, J.-P. Pons, R. Keriven. CVPR 2009.
+4. [Refinement of Surface Mesh for Accurate Multi-View Reconstruction](http://cmp.felk.cvut.cz/ftp/articles/tylecek/Tylecek-IJVR2010.pdf). R. Tylecek and R. Sara. IJVR 2010.
+5. [High Accuracy and Visibility-Consistent Dense Multiview Stereo](https://hal.archives-ouvertes.fr/hal-00712178/).  H.-H. Vu, P. Labatut, J.-P. Pons, R. Keriven. Pami 2012.
+6. [Exploiting Visibility Information in Surface Reconstruction to Preserve Weakly Supported Surfaces](https://www.researchgate.net/publication/275064596_Exploiting_Visibility_Information_in_Surface_Reconstruction_to_Preserve_Weakly_Supported_Surfaces) M. Jancosek et al. 2014.
+7. [A New Variational Framework for Multiview Surface Reconstruction](http://urbanrobotics.net/pdf/A_New_Variational_Framework_for_Multiview_Surface_Reconstruction_86940719.pdf). B. Semerjian. ECCV 2014.
+8. [Photometric Bundle Adjustment for Dense Multi-View 3D Modeling](https://www.inf.ethz.ch/personal/pomarc/pubs/DelaunoyCVPR14.pdf). A. Delaunoy, M. Pollefeys. CVPR2014.
+9. [Global, Dense Multiscale Reconstruction for a Billion Points](https://lmb.informatik.uni-freiburg.de/people/ummenhof/multiscalefusion/). B. Ummenhofer, T. Brox. ICCV 2015.
+10. [Efficient Multi-view Surface Refinement with Adaptive Resolution Control](http://slibc.student.ust.hk/pdf/arc.pdf). S. Li, S. Yu Siu, T. Fang, L. Quan. ECCV 2016.
+11. [Multi-View Inverse Rendering under Arbitrary Illumination and Albedo](http://www.ok.ctrl.titech.ac.jp/~torii/project/mvir/), K. Kim, A. Torii, M. Okutomi, ECCV2016.
+12. [Shading-aware Multi-view Stereo](http://www.gcc.tu-darmstadt.de/media/gcc/papers/Langguth-2016-SMV.pdf), F. Langguth and K. Sunkavalli and S. Hadap and M. Goesele, ECCV 2016.
+13. [Scalable Surface Reconstruction from Point Clouds with Extreme Scale and Density Diversity](https://arxiv.org/abs/1705.00949), C. Mostegel, R. Prettenthaler, F. Fraundorfer and H. Bischof. CVPR 2017.
+14. [Multi-View Stereo with Single-View Semantic Mesh Refinement](http://openaccess.thecvf.com/content_ICCV_2017_workshops/papers/w13/Romanoni_Multi-View_Stereo_with_ICCV_2017_paper.pdf), A. Romanoni, M. Ciccone, F. Visin, M. Matteucci. ICCVW 2017
+
+#### Machine Learning based MVS
+
+1. [Matchnet: Unifying feature and metric learning for patch-based matching](https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Han_MatchNet_Unifying_Feature_2015_CVPR_paper.pdf), X. Han, Thomas Leung, Y. Jia, R. Sukthankar, A. C. Berg. CVPR 2015.
+2. [Stereo matching by training a convolutional neural network to compare image patches](https://github.com/jzbontar/mc-cnn), J., Zbontar,  and Y. LeCun. JMLR 2016.
+3. [Efficient deep learning for stereo matching](https://www.cs.toronto.edu/~urtasun/publications/luo_etal_cvpr16.pdf), W. Luo, A. G. Schwing, R. Urtasun. CVPR 2016.
+4. [Learning a multi-view stereo machine](https://arxiv.org/abs/1708.05375), A. Kar, C. Häne, J. Malik. NIPS 2017.
+5. [Learned multi-patch similarity](https://arxiv.org/abs/1703.08836), W. Hartmann, S. Galliani, M. Havlena, L. V. Gool, K. Schindler.I CCV 2017.
+6. [Surfacenet: An end-to-end 3d neural network for multiview stereopsis](https://github.com/mjiUST/SurfaceNet), Ji, M., Gall, J., Zheng, H., Liu, Y., Fang, L. ICCV2017.
+7. [DeepMVS: Learning Multi-View Stereopsis](https://github.com/phuang17/DeepMVS), Huang, P. and Matzen, K. and Kopf, J. and Ahuja, N. and Huang, J. CVPR 2018.
+8. [RayNet: Learning Volumetric 3D Reconstruction with Ray Potentials](https://avg.is.tuebingen.mpg.de/publications/paschalidou2018cvpr), D. Paschalidou and A. O. Ulusoy and C. Schmitt and L. Gool and A. Geiger. CVPR 2018.
+9. [MVSNet: Depth Inference for Unstructured Multi-view Stereo](https://arxiv.org/abs/1804.02505), Y. Yao, Z. Luo, S. Li, T. Fang, L. Quan. ECCV 2018.
+10. [Learning Unsupervised Multi-View Stereopsis via Robust Photometric Consistency](https://tejaskhot.github.io/unsup_mvs/), T. Khot, S. Agrawal, S. Tulsiani, C. Mertz, S. Lucey, M. Hebert. 2019.
+11. [DPSNET: END-TO-END DEEP PLANE SWEEP STEREO](https://openreview.net/pdf?id=ryeYHi0ctQ), Sunghoon Im, Hae-Gon Jeon, Stephen Lin, In So Kweon. 2019.
+12. [Point-based Multi-view Stereo Network](http://hansf.me/projects/PMVSNet/), Rui Chen, Songfang Han, Jing Xu, Hao Su. ICCV 2019.
+
+#### Multiple View Mesh Texturing（多视图网格纹理）
+
+1. [Seamless image-based texture atlases using multi-band blending](http://imagine.enpc.fr/publications/papers/ICPR08a.pdf). C. Allène,  J-P. Pons and R. Keriven. ICPR 2008.
+2. [Let There Be Color! - Large-Scale Texturing of 3D Reconstructions](http://www.gcc.tu-darmstadt.de/home/proj/texrecon/). M. Waechter, N. Moehrle, M. Goesele. ECCV 2014
+
+### Courses
+
+- [Image Manipulation and Computational Photography](http://inst.eecs.berkeley.edu/~cs194-26/fa14/) - Alexei A. Efros (UC Berkeley)
+- [Computational Photography](http://graphics.cs.cmu.edu/courses/15-463/2012_fall/463.html) - Alexei A. Efros (CMU)
+- [Computational Photography](https://courses.engr.illinois.edu/cs498dh3/) - Derek Hoiem (UIUC)
+- [Computational Photography](http://cs.brown.edu/courses/csci1290/) - James Hays (Brown University)
+- [Digital & Computational Photography](http://stellar.mit.edu/S/course/6/sp12/6.815/) - Fredo Durand (MIT)
+- [Computational Camera and Photography](http://ocw.mit.edu/courses/media-arts-and-sciences/mas-531-computational-camera-and-photography-fall-2009/) - Ramesh Raskar (MIT Media Lab)
+- [Computational Photography](https://www.udacity.com/course/computational-photography--ud955) - Irfan Essa (Georgia Tech)
+- [Courses in Graphics](http://graphics.stanford.edu/courses/) - Stanford University
+- [Computational Photography](http://cs.nyu.edu/~fergus/teaching/comp_photo/index.html) - Rob Fergus (NYU)
+- [Introduction to Visual Computing](http://www.cs.toronto.edu/~kyros/courses/320/) - Kyros Kutulakos (University of Toronto)
+- [Computational Photography](http://www.cs.toronto.edu/~kyros/courses/2530/) - Kyros Kutulakos (University of Toronto)
+- [Computer Vision for Visual Effects](https://www.ecse.rpi.edu/~rjradke/cvfxcourse.html) - Rich Radke (Rensselaer Polytechnic Institute)
+- [Introduction to Image Processing](https://www.ecse.rpi.edu/~rjradke/improccourse.html) - Rich Radke (Rensselaer Polytechnic Institute)
+
+### Software
+
+- [MATLAB Functions for Multiple View Geometry](http://www.robots.ox.ac.uk/~vgg/hzbook/code/)
+- [Peter Kovesi's Matlab Functions for Computer Vision and Image Analysis](http://staffhome.ecm.uwa.edu.au/~00011811/Research/MatlabFns/index.html)
+- [OpenGV ](http://laurentkneip.github.io/opengv/)- geometric computer vision algorithms
+- [MinimalSolvers](http://cmp.felk.cvut.cz/mini/) - Minimal problems solver
+- [Multi-View Environment](http://www.gcc.tu-darmstadt.de/home/proj/mve/)
+- [Visual SFM](http://ccwu.me/vsfm/)
+- [Bundler SFM](http://www.cs.cornell.edu/~snavely/bundler/)
+- [openMVG: open Multiple View Geometry](http://imagine.enpc.fr/~moulonp/openMVG/) - Multiple View Geometry; Structure from Motion library & softwares
+- [Patch-based Multi-view Stereo V2](http://www.di.ens.fr/pmvs/)
+- [Clustering Views for Multi-view Stereo](http://www.di.ens.fr/cmvs/)
+- [Floating Scale Surface Reconstruction](http://www.gris.informatik.tu-darmstadt.de/projects/floating-scale-surface-recon/)
+- [Large-Scale Texturing of 3D Reconstructions](http://www.gcc.tu-darmstadt.de/home/proj/texrecon/)
+- [Multi-View Stereo Reconstruction](http://vision.middlebury.edu/mview/)
+
+### Project&code
+
+| Project                                                      | Language             | License                                                      |
+| ------------------------------------------------------------ | -------------------- | ------------------------------------------------------------ |
+| [Colmap](https://github.com/colmap/colmap)                   | C++ CUDA             | BSD 3-clause license - Permissive (Can use CGAL -> GNU General Public License - contamination) |
+| [GPUIma + fusibile](https://github.com/kysucix)              | C++ CUDA             | GNU General Public License - contamination                   |
+| [HPMVS](https://github.com/alexlocher/hpmvs)                 | C++                  | GNU General Public License - contamination                   |
+| [MICMAC](http://logiciels.ign.fr/?Micmac)                    | C++                  | CeCILL-B                                                     |
+| [MVE](https://github.com/simonfuhrmann/mve)                  | C++                  | BSD 3-Clause license + parts under the GPL 3 license         |
+| [OpenMVS](https://github.com/cdcseacave/openMVS/)            | C++  (CUDA optional) | AGPL3                                                        |
+| [PMVS](https://github.com/pmoulon/CMVS-PMVS)                 | C++ CUDA             | GNU General Public License - contamination                   |
+| [SMVS Shading-aware Multi-view Stereo](https://github.com/flanggut/smvs) | C++                  | BSD-3-Clause license                                         |
 
 ## 3D人脸重建
 
@@ -229,58 +440,7 @@
 
 9、[Joint 3D Face Reconstruction and Dense Face Alignment from A Single Image with 2D-Assisted Self-Supervised Learning](https://arxiv.org/abs/1903.09359)
 
-10、[Face Alignment Across Large Poses: A 3D Solution](https://arxiv.org/pdf/1511.07212.pdf)
-
-# Multi-view Stereo
-
-> 多视角立体视觉（Multiple View Stereo，MVS）是对立体视觉的推广，能够在多个视角（从外向里）观察和获取景物的图像，并以此完成匹配和深度估计。某种意义上讲，SLAM/SFM其实和MVS是类似的，只是前者是摄像头运动，后者是多个摄像头视角。也可以说，前者可以在环境里面“穿行”，而后者更像在环境外“旁观”。
->
-> 多视角立体视觉的pipelines如下：
->
-> 1. 收集图像；
-> 2. 针对每个图像计算相机参数；
-> 3. 从图像集和相应的摄像机参数重建场景的3D几何图形；
-> 4. 可选择地重建场景的形状和纹理颜色。
-
-参考链接：[多视角立体视觉MVS简介](https://zhuanlan.zhihu.com/p/73748124)
-
-## paper
-
-1、[Multi-view stereo: A tutorial](https://www.mendeley.com/catalogue/multiview-stereo-tutorial/)
-
-## Courses
-
-- [Image Manipulation and Computational Photography](http://inst.eecs.berkeley.edu/~cs194-26/fa14/) - Alexei A. Efros (UC Berkeley)
-- [Computational Photography](http://graphics.cs.cmu.edu/courses/15-463/2012_fall/463.html) - Alexei A. Efros (CMU)
-- [Computational Photography](https://courses.engr.illinois.edu/cs498dh3/) - Derek Hoiem (UIUC)
-- [Computational Photography](http://cs.brown.edu/courses/csci1290/) - James Hays (Brown University)
-- [Digital & Computational Photography](http://stellar.mit.edu/S/course/6/sp12/6.815/) - Fredo Durand (MIT)
-- [Computational Camera and Photography](http://ocw.mit.edu/courses/media-arts-and-sciences/mas-531-computational-camera-and-photography-fall-2009/) - Ramesh Raskar (MIT Media Lab)
-- [Computational Photography](https://www.udacity.com/course/computational-photography--ud955) - Irfan Essa (Georgia Tech)
-- [Courses in Graphics](http://graphics.stanford.edu/courses/) - Stanford University
-- [Computational Photography](http://cs.nyu.edu/~fergus/teaching/comp_photo/index.html) - Rob Fergus (NYU)
-- [Introduction to Visual Computing](http://www.cs.toronto.edu/~kyros/courses/320/) - Kyros Kutulakos (University of Toronto)
-- [Computational Photography](http://www.cs.toronto.edu/~kyros/courses/2530/) - Kyros Kutulakos (University of Toronto)
-- [Computer Vision for Visual Effects](https://www.ecse.rpi.edu/~rjradke/cvfxcourse.html) - Rich Radke (Rensselaer Polytechnic Institute)
-- [Introduction to Image Processing](https://www.ecse.rpi.edu/~rjradke/improccourse.html) - Rich Radke (Rensselaer Polytechnic Institute)
-
-## Software
-
-- [MATLAB Functions for Multiple View Geometry](http://www.robots.ox.ac.uk/~vgg/hzbook/code/)
-- [Peter Kovesi's Matlab Functions for Computer Vision and Image Analysis](http://staffhome.ecm.uwa.edu.au/~00011811/Research/MatlabFns/index.html)
-- [OpenGV ](http://laurentkneip.github.io/opengv/)- geometric computer vision algorithms
-- [MinimalSolvers](http://cmp.felk.cvut.cz/mini/) - Minimal problems solver
-- [Multi-View Environment](http://www.gcc.tu-darmstadt.de/home/proj/mve/)
-- [Visual SFM](http://ccwu.me/vsfm/)
-- [Bundler SFM](http://www.cs.cornell.edu/~snavely/bundler/)
-- [openMVG: open Multiple View Geometry](http://imagine.enpc.fr/~moulonp/openMVG/) - Multiple View Geometry; Structure from Motion library & softwares
-- [Patch-based Multi-view Stereo V2](http://www.di.ens.fr/pmvs/)
-- [Clustering Views for Multi-view Stereo](http://www.di.ens.fr/cmvs/)
-- [Floating Scale Surface Reconstruction](http://www.gris.informatik.tu-darmstadt.de/projects/floating-scale-surface-recon/)
-- [Large-Scale Texturing of 3D Reconstructions](http://www.gcc.tu-darmstadt.de/home/proj/texrecon/)
-- [Awesome 3D reconstruction list](https://github.com/openMVG/awesome_3DReconstruction_list)
-
-- [Multi-View Stereo Reconstruction](http://vision.middlebury.edu/mview/)
+10、[Face Alignment Across Large Poses: A 3D Solution](
 
 # 深度图补全
 
