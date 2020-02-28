@@ -1,7 +1,3 @@
-# awesome-3D-vision
-
-3D computer vision incuding SLAM，VSALM，Deep Learning，Structured light，Stereo，Three-dimensional reconstruction，Computer vision，Machine Learning and so on
-
 # 介绍
 
 > 公众号：[3D视觉工坊](https://mp.weixin.qq.com/s?__biz=MzU1MjY4MTA1MQ==&mid=2247484684&idx=1&sn=e812540aee03a4fc54e44d5555ccb843&chksm=fbff2e38cc88a72e180f0f6b0f7b906dd616e7d71fffb9205d529f1238e8ef0f0c5554c27dd7&token=691734513&lang=zh_CN#rd)
@@ -10,11 +6,35 @@
 >
 > 运营者和嘉宾介绍：运营者来自国内一线大厂的算法工程师，深研3D视觉、深度学习、图像处理、自动驾驶、vSLAM等领域，特邀嘉宾包括国内外知名高校的博士硕士，旷视、商汤、百度、阿里等就职的算法大佬，欢迎一起交流学习
 
+[TOC]
+
+# 硬件
+
+[事件相机知识点汇总](https://github.com/uzh-rpg/event-based_vision_resources)
+
+# 相机标定
+
+
+
 # 3D视觉实战代码汇总
 
 1. https://github.com/sunglok/3dv_tutorial(涉及SLAM、多视图几何代码示例)
 
 # SLAM
+
+## 优秀开源项目汇总
+
+[https://github.com/OpenSLAM/awesome-SLAM-list](https://github.com/OpenSLAM/awesome-SLAM-list)
+
+[https://github.com/tzutalin/awesome-visual-slam](https://github.com/tzutalin/awesome-visual-slam)
+
+[Recent_SLAM_Research](https://github.com/YiChenCityU/Recent_SLAM_Research)
+
+[https://github.com/youngguncho/awesome-slam-datasets](https://github.com/youngguncho/awesome-slam-datasets)
+
+[https://github.com/marknabil/SFM-Visual-SLAM](https://github.com/marknabil/SFM-Visual-SLAM)
+
+[https://github.com/ckddls1321/SLAM_Resources](https://github.com/ckddls1321/SLAM_Resources)
 
 ## Books
 
@@ -120,39 +140,154 @@
 
 ## 点云识别
 
-1、[3D ShapeNets: A Deep Representation for Volumetric Shapes](http://3dvision.princeton.edu/projects/2014/3DShapeNets/paper.pdf)
+1. [3D ShapeNets: A Deep Representation for Volumetric Shapes](http://3dvision.princeton.edu/projects/2014/3DShapeNets/paper.pdf)
+2. [PartNet: A Large-scale Benchmark for Fine-grained and Hierarchical Part-level 3D Object Understanding](https://arxiv.org/abs/1812.02713)
+3. [Revisiting Point Cloud Classification: A New Benchmark Dataset and Classification Model on Real-World Data](https://arxiv.org/pdf/1908.04616.pdf)
+4. [Escape from Cells: Deep Kd-Networks for the Recognition of 3D Point Cloud Models](http://openaccess.thecvf.com/content_ICCV_2017/papers/Klokov_Escape_From_Cells_ICCV_2017_paper.pdf)[ICCV2017]
+5. [[ICCV2017](http://openaccess.thecvf.com/content_ICCV_2017/papers/Park_Colored_Point_Cloud_ICCV_2017_paper.pdf)] Colored Point Cloud Registration Revisited. 
+6. [[ICRA2017](https://ieeexplore.ieee.org/document/7989618)] SegMatch: Segment based place recognition in 3D point clouds.
+7. [[IROS2017](https://ieeexplore.ieee.org/document/8202239)] 3D object classification with point convolution network.
+8. [[CVPR2018](http://openaccess.thecvf.com/content_cvpr_2018/papers/Hua_Pointwise_Convolutional_Neural_CVPR_2018_paper.pdf)] Pointwise Convolutional Neural Networks.
+9. [[CVPR2018](http://openaccess.thecvf.com/content_cvpr_2018/papers/Li_SO-Net_Self-Organizing_Network_CVPR_2018_paper.pdf)] SO-Net: Self-Organizing Network for Point Cloud Analysis. 
+10. [[CVPR2018](http://openaccess.thecvf.com/content_cvpr_2018/papers/Uy_PointNetVLAD_Deep_Point_CVPR_2018_paper.pdf)] PointNetVLAD: Deep Point Cloud Based Retrieval for Large-Scale Place Recognition. 
+11. [[CVPR2018](http://openaccess.thecvf.com/content_cvpr_2018/papers/Le_PointGrid_A_Deep_CVPR_2018_paper.pdf)] PointGrid: A Deep Network for 3D Shape Understanding. 
+12. [[CVPR2019](https://raoyongming.github.io/files/SFCNN.pdf)] Spherical Fractal Convolutional Neural Networks for Point Cloud Recognition. 
+13. [[MM](https://dl.acm.org/citation.cfm?id=3343031.3351009)] MMJN: Multi-Modal Joint Networks for 3D Shape Recognition. 
 
-2、[PartNet: A Large-scale Benchmark for Fine-grained and Hierarchical Part-level 3D Object Understanding](https://arxiv.org/abs/1812.02713)
 
-3、[Revisiting Point Cloud Classification: A New Benchmark Dataset and Classification Model on Real-World Data](https://arxiv.org/pdf/1908.04616.pdf)
 
-## 点云匹配
+## 点云匹配&对齐&注册
 
-1、[An ICP variant using a point-to-line metric](https://authors.library.caltech.edu/18274/1/Censi2008p84782008_Ieee_International_Conference_On_Robotics_And_Automation_Vols_1-9.pdf)
+1. [An ICP variant using a point-to-line metric](https://authors.library.caltech.edu/18274/1/Censi2008p84782008_Ieee_International_Conference_On_Robotics_And_Automation_Vols_1-9.pdf)
+2. [Generalized-ICP](https://www.researchgate.net/publication/221344436_Generalized-ICP)
+3. [Linear Least-Squares Optimization for Point-to-Plane ICP Surface Registration](https://www.researchgate.net/publication/228571031_Linear_Least-Squares_Optimization_for_Point-to-Plane_ICP_Surface_Registration)
+4. [Metric-Based Iterative Closest Point Scan Matching for Sensor Displacement Estimation](http://webdiis.unizar.es/~jminguez/MbICP_TRO.pdf)
+5. [NICP: Dense Normal Based Point Cloud Registration](http://jacoposerafin.com/wp-content/uploads/serafin15iros.pdf)
+6. [Efficient Global Point Cloud Alignment using Bayesian Nonparametric Mixtures](http://openaccess.thecvf.com/content_cvpr_2017/papers/Straub_Efficient_Global_Point_CVPR_2017_paper.pdf)[CVPR2017]
+7. [3DMatch: Learning Local Geometric Descriptors from RGB-D Reconstructions](http://openaccess.thecvf.com/content_cvpr_2017/papers/Zeng_3DMatch_Learning_Local_CVPR_2017_paper.pdf)[CVPR2017]
+8. [[CVPR2018](http://openaccess.thecvf.com/content_cvpr_2018/papers/Lawin_Density_Adaptive_Point_CVPR_2018_paper.pdf)] Density Adaptive Point Set Registration.
+9. [[CVPR2018](http://openaccess.thecvf.com/content_cvpr_2018/papers/Vongkulbhisal_Inverse_Composition_Discriminative_CVPR_2018_paper.pdf)] Inverse Composition Discriminative Optimization for Point Cloud Registration.
+10. [[CVPR2018](http://openaccess.thecvf.com/content_cvpr_2018/papers/Deng_PPFNet_Global_Context_CVPR_2018_paper.pdf)] PPFNet: Global Context Aware Local Features for Robust 3D Point Matching.
+11. [[ECCV2018](http://openaccess.thecvf.com/content_ECCV_2018/papers/Lei_Zhou_Learning_and_Matching_ECCV_2018_paper.pdf)] Learning and Matching Multi-View Descriptors for Registration of Point Clouds. 
+12. [[ECCV2018](http://openaccess.thecvf.com/content_ECCV_2018/papers/Zi_Jian_Yew_3DFeat-Net_Weakly_Supervised_ECCV_2018_paper.pdf)] 3DFeat-Net: Weakly Supervised Local 3D Features for Point Cloud Registration. 
+13. [[ECCV2018](http://openaccess.thecvf.com/content_ECCV_2018/papers/Yinlong_Liu_Efficient_Global_Point_ECCV_2018_paper.pdf)] Efficient Global Point Cloud Registration by Matching Rotation Invariant Features Through Translation Search. 
+14. [[IROS2018](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8593558)] Robust Generalized Point Cloud Registration with Expectation Maximization Considering Anisotropic Positional Uncertainties. 
+15. [[CVPR2019](https://arxiv.org/abs/1903.05711)] PointNetLK: Point Cloud Registration using PointNet. 
+16. [[CVPR2019](https://arxiv.org/abs/1904.03483)] SDRSAC: Semidefinite-Based Randomized Approach for Robust Point Cloud Registration without Correspondences. 
+17. [[CVPR2019](https://arxiv.org/abs/1811.06879v2)] The Perfect Match: 3D Point Cloud Matching with Smoothed Densities. 
+18. [[CVPR](https://arxiv.org/abs/1811.10136)] FilterReg: Robust and Efficient Probabilistic Point-Set Registration using Gaussian Filter and Twist Parameterization. 
+19. [[CVPR2019](http://openaccess.thecvf.com/content_CVPR_2019/papers/Deng_3D_Local_Features_for_Direct_Pairwise_Registration_CVPR_2019_paper.pdf)] 3D Local Features for Direct Pairwise Registration. 
+20. [[ICCV2019](https://arxiv.org/abs/1905.04153v2)] DeepICP: An End-to-End Deep Neural Network for 3D Point Cloud Registration.
+21. [[ICCV2019](http://openaccess.thecvf.com/content_ICCV_2019/papers/Wang_Deep_Closest_Point_Learning_Representations_for_Point_Cloud_Registration_ICCV_2019_paper.pdf)] Deep Closest Point: Learning Representations for Point Cloud Registration. 
+22. [[ICRA2019](https://arxiv.org/abs/1904.09742)] 2D3D-MatchNet: Learning to Match Keypoints across 2D Image and 3D Point Cloud.
+23. [[CVPR2019](https://arxiv.org/abs/1811.06879v2)] The Perfect Match: 3D Point Cloud Matching with Smoothed Densities.
+24. [[CVPR2019](http://openaccess.thecvf.com/content_CVPR_2019/papers/Deng_3D_Local_Features_for_Direct_Pairwise_Registration_CVPR_2019_paper.pdf)] 3D Local Features for Direct Pairwise Registration.
+25. [[ICCV2019](http://openaccess.thecvf.com/content_ICCV_2019/papers/Zhou_Robust_Variational_Bayesian_Point_Set_Registration_ICCV_2019_paper.pdf)] Robust Variational Bayesian Point Set Registration.
+26. [[ICRA2019](https://arpg.colorado.edu/papers/hmrf_icp.pdf)] Robust low-overlap 3-D point cloud registration for outlier rejection. 
 
-2、[Generalized-ICP](https://www.researchgate.net/publication/221344436_Generalized-ICP)
 
-3、[Linear Least-Squares Optimization for Point-to-Plane ICP Surface Registration](https://www.researchgate.net/publication/228571031_Linear_Least-Squares_Optimization_for_Point-to-Plane_ICP_Surface_Registration)
 
-4、[Metric-Based Iterative Closest Point Scan Matching for Sensor Displacement Estimation](http://webdiis.unizar.es/~jminguez/MbICP_TRO.pdf)
+## 点云匹配质量评估
 
-5、[NICP: Dense Normal Based Point Cloud Registration](http://jacoposerafin.com/wp-content/uploads/serafin15iros.pdf)
+1. [[IROS2017](https://ieeexplore.ieee.org/document/8206584)] Analyzing the quality of matched 3D point clouds of objects.
+
+
 
 ## 点云分割
 
-1、[SceneEncoder: Scene-Aware Semantic Segmentation of Point Clouds with A Learnable Scene Descriptor](https://arxiv.org/abs/2001.09087v1)
+1. [SceneEncoder: Scene-Aware Semantic Segmentation of Point Clouds with A Learnable Scene Descriptor](https://arxiv.org/abs/2001.09087v1)
+2. [From Planes to Corners: Multi-Purpose Primitive Detection in Unorganized 3D Point Clouds](https://arxiv.org/abs/2001.07360?context=cs.RO)
+3. [Learning and Memorizing Representative Prototypes for 3D Point Cloud Semantic and Instance Segmentation](http://arxiv.org/abs/2001.01349)
+4. [JSNet: Joint Instance and Semantic Segmentation of 3D Point Clouds](https://arxiv.org/abs/1912.09654v1)
+5. [PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation](https://arxiv.org/abs/1612.00593v2)
+6. [PointNet++: Deep Hierarchical Feature Learning on Point Sets in a Metric Space](https://arxiv.org/abs/1706.02413v1)
+7. [SyncSpecCNN: Synchronized Spectral CNN for 3D Shape Segmentation,CVPR2017]()
+8. [[ICRA2017](https://ieeexplore.ieee.org/document/7989618)] SegMatch: Segment based place recognition in 3D point clouds.
+9. [[3DV2017](http://segcloud.stanford.edu/segcloud_2017.pdf)] SEGCloud: Semantic Segmentation of 3D Point Clouds. 
+10. [[CVPR2018](http://openaccess.thecvf.com/content_cvpr_2018/papers/Huang_Recurrent_Slice_Networks_CVPR_2018_paper.pdf)] Recurrent Slice Networks for 3D Segmentation of Point Clouds. 
+11. [[CVPR2018](http://openaccess.thecvf.com/content_cvpr_2018/papers/Wang_SGPN_Similarity_Group_CVPR_2018_paper.pdf)] SGPN: Similarity Group Proposal Network for 3D Point Cloud Instance Segmentation.
+12. [[CVPR2018](http://openaccess.thecvf.com/content_cvpr_2018/papers/Landrieu_Large-Scale_Point_Cloud_CVPR_2018_paper.pdf)] Large-scale Point Cloud Semantic Segmentation with Superpoint Graphs.
+13. [[ECCV2018](http://openaccess.thecvf.com/content_ECCV_2018/papers/Xiaoqing_Ye_3D_Recurrent_Neural_ECCV_2018_paper.pdf)] 3D Recurrent Neural Networks with Context Fusion for Point Cloud Semantic Segmentation.
+14. [[CVPR2019](https://arxiv.org/abs/1904.00699v1)] JSIS3D: Joint Semantic-Instance Segmentation of 3D Point Clouds with Multi-Task Pointwise Networks and Multi-Value Conditional Random Fields. 
+15. [[CVPR2019](https://arxiv.org/abs/1903.00709)] PartNet: A Recursive Part Decomposition Network for Fine-grained and Hierarchical Shape Segmentation. 
+16. [[ICCV2019](http://openaccess.thecvf.com/content_ICCV_2019/papers/Lahoud_3D_Instance_Segmentation_via_Multi-Task_Metric_Learning_ICCV_2019_paper.pdf)] 3D Instance Segmentation via Multi-Task Metric Learning.
+17. [[IROS2019](https://arxiv.org/pdf/1909.01643v1.pdf)] PASS3D: Precise and Accelerated Semantic Segmentation for 3D Point Cloud.
 
-2、[From Planes to Corners: Multi-Purpose Primitive Detection in Unorganized 3D Point Clouds](https://arxiv.org/abs/2001.07360?context=cs.RO)
+## 点云三维重建
 
-3、[Learning and Memorizing Representative Prototypes for 3D Point Cloud Semantic and Instance Segmentation](http://arxiv.org/abs/2001.01349)
+1. [Scalable Surface Reconstruction from Point Clouds with Extreme Scale and Density Diversity,CVPR2017](http://openaccess.thecvf.com/content_cvpr_2017/papers/Mostegel_Scalable_Surface_Reconstruction_CVPR_2017_paper.pdf)
+2. [[ICCV2017](http://openaccess.thecvf.com/content_ICCV_2017/papers/Nan_PolyFit_Polygonal_Surface_ICCV_2017_paper.pdf)] PolyFit: Polygonal Surface Reconstruction from Point Clouds.
+3. [[ICCV2017](http://openaccess.thecvf.com/content_ICCV_2017/papers/Ladicky_From_Point_Clouds_ICCV_2017_paper.pdf)] From Point Clouds to Mesh using Regression.
+4. [[ECCV2018](http://openaccess.thecvf.com/content_ECCV_2018/papers/Kejie_Li_Efficient_Dense_Point_ECCV_2018_paper.pdf)] Efficient Dense Point Cloud Object Reconstruction using Deformation Vector Fields. 
+5. [[ECCV2018](http://openaccess.thecvf.com/content_ECCV_2018/papers/Benjamin_Eckart_Fast_and_Accurate_ECCV_2018_paper.pdf)] HGMR: Hierarchical Gaussian Mixtures for Adaptive 3D Registration.
+6. [[AAAI2018](https://aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16530/16302)] Learning Efficient Point Cloud Generation for Dense 3D Object Reconstruction. 
+7. [[CVPR2019](https://www.researchgate.net/publication/332240602_Robust_Point_Cloud_Based_Reconstruction_of_Large-Scale_Outdoor_Scenes)] Robust Point Cloud Based Reconstruction of Large-Scale Outdoor Scenes. 
+8. [[AAAI2019](https://arxiv.org/abs/1811.11731)] CAPNet: Continuous Approximation Projection For 3D Point Cloud Reconstruction Using 2D Supervision. 
+9. [[MM](https://dl.acm.org/citation.cfm?id=3350960)] L2G Auto-encoder: Understanding Point Clouds by Local-to-Global Reconstruction with Hierarchical Self-Attention. 
+10. [SurfNet: Generating 3D shape surfaces using deep residual networks]()
+11. 
 
-4、[JSNet: Joint Instance and Semantic Segmentation of 3D Point Clouds](https://arxiv.org/abs/1912.09654v1)
 
-5、[PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation](https://arxiv.org/abs/1612.00593v2)
 
-6、[PointNet++: Deep Hierarchical Feature Learning on Point Sets in a Metric Space](https://arxiv.org/abs/1706.02413v1)
+## 点云其它
+
+1. [[CVPR2018](http://openaccess.thecvf.com/content_cvpr_2018/papers/Yun_Reflection_Removal_for_CVPR_2018_paper.pdf)] Reflection Removal for Large-Scale 3D Point Clouds. 
+2. [[ICML2018](https://arxiv.org/abs/1707.02392)] Learning Representations and Generative Models for 3D Point Clouds.
+3. [[3DV](https://arxiv.org/abs/1808.00671)] PCN: Point Completion Network. 
+4. [[CVPR2019](https://arxiv.org/abs/1812.02713)] PartNet: A Large-scale Benchmark for Fine-grained and Hierarchical Part-level 3D Object Understanding. 
+5. [[CVPR2019](http://www.linliang.net/wp-content/uploads/2019/04/CVPR2019_PointClound.pdf)] ClusterNet: Deep Hierarchical Cluster Network with Rigorously Rotation-Invariant Representation for Point Cloud Analysis.
+6. [[ICCV2019](https://arxiv.org/pdf/1812.07050.pdf)] LPD-Net: 3D Point Cloud Learning for Large-Scale Place Recognition and Environment Analysis. 
+7. [[ICRA2019](https://ras.papercept.net/conferences/conferences/ICRA19/program/ICRA19_ContentListWeb_2.html)] Speeding up Iterative Closest Point Using Stochastic Gradient Descent. 
+
+## 点云数据集
+
+1. [[KITTI](http://www.cvlibs.net/datasets/kitti/)] The KITTI Vision Benchmark Suite. [**`det.`**]
+2. [[ModelNet](http://modelnet.cs.princeton.edu/)] The Princeton ModelNet . [**`cls.`**]
+3. [[ShapeNet](https://www.shapenet.org/)] A collaborative dataset between researchers at Princeton, Stanford and TTIC. [**`seg.`**]
+4. [[PartNet](https://shapenet.org/download/parts)] The PartNet dataset provides fine grained part annotation of objects in ShapeNetCore. [**`seg.`**]
+5. [[PartNet](http://kevinkaixu.net/projects/partnet.html)] PartNet benchmark from Nanjing University and National University of Defense Technology. [**`seg.`**]
+6. [[S3DIS](http://buildingparser.stanford.edu/dataset.html#Download)] The Stanford Large-Scale 3D Indoor Spaces Dataset. [**`seg.`**]
+7. [[ScanNet](http://www.scan-net.org/)] Richly-annotated 3D Reconstructions of Indoor Scenes. [**`cls.`** **`seg.`**]
+8. [[Stanford 3D](https://graphics.stanford.edu/data/3Dscanrep/)] The Stanford 3D Scanning Repository. [**`reg.`**]
+9. [[UWA Dataset](http://staffhome.ecm.uwa.edu.au/~00053650/databases.html)] . [**`cls.`** **`seg.`** **`reg.`**]
+10. [[Princeton Shape Benchmark](http://shape.cs.princeton.edu/benchmark/)] The Princeton Shape Benchmark.
+11. [[SYDNEY URBAN OBJECTS DATASET](http://www.acfr.usyd.edu.au/papers/SydneyUrbanObjectsDataset.shtml)] This dataset contains a variety of common urban road objects scanned with a Velodyne HDL-64E LIDAR, collected in the CBD of Sydney, Australia. There are 631 individual scans of objects across classes of vehicles, pedestrians, signs and trees. [**`cls.`** **`match.`**]
+12. [[ASL Datasets Repository(ETH)](https://projects.asl.ethz.ch/datasets/doku.php?id=home)] This site is dedicated to provide datasets for the Robotics community with the aim to facilitate result evaluations and comparisons. [**`cls.`** **`match.`** **`reg.`** **`det`**]
+13. [[Large-Scale Point Cloud Classification Benchmark(ETH)](http://www.semantic3d.net/)] This benchmark closes the gap and provides a large labelled 3D point cloud data set of natural scenes with over 4 billion points in total. [**`cls.`**]
+14. [[Robotic 3D Scan Repository](http://asrl.utias.utoronto.ca/datasets/3dmap/)] The Canadian Planetary Emulation Terrain 3D Mapping Dataset is a collection of three-dimensional laser scans gathered at two unique planetary analogue rover test facilities in Canada.
+15. [[Radish](http://radish.sourceforge.net/)] The Robotics Data Set Repository (Radish for short) provides a collection of standard robotics data sets.
+16. [[IQmulus & TerraMobilita Contest](http://data.ign.fr/benchmarks/UrbanAnalysis/#)] The database contains 3D MLS data from a dense urban environment in Paris (France), composed of 300 million points. The acquisition was made in January 2013. [**`cls.`** **`seg.`** **`det.`**]
+17. [[Oakland 3-D Point Cloud Dataset](http://www.cs.cmu.edu/~vmr/datasets/oakland_3d/cvpr09/doc/)] This repository contains labeled 3-D point cloud laser data collected from a moving platform in a urban environment.
+18. [[Robotic 3D Scan Repository](http://kos.informatik.uni-osnabrueck.de/3Dscans/)] This repository provides 3D point clouds from robotic experiments，log files of robot runs and standard 3D data sets for the robotics community.
+19. [[Ford Campus Vision and Lidar Data Set](http://robots.engin.umich.edu/SoftwareData/Ford)] The dataset is collected by an autonomous ground vehicle testbed, based upon a modified Ford F-250 pickup truck.
+20. [[The Stanford Track Collection](https://cs.stanford.edu/people/teichman/stc/)] This dataset contains about 14,000 labeled tracks of objects as observed in natural street scenes by a Velodyne HDL-64E S2 LIDAR.
+21. [[PASCAL3D+](http://cvgl.stanford.edu/projects/pascal3d.html)] Beyond PASCAL: A Benchmark for 3D Object Detection in the Wild. [**`pos.`** **`det.`**]
+22. [[3D MNIST](https://www.kaggle.com/daavoo/3d-mnist)] The aim of this dataset is to provide a simple way to get started with 3D computer vision problems such as 3D shape recognition. [**`cls.`**]
+23. [[WAD](http://wad.ai/2019/challenge.html)] [[ApolloScape](http://apolloscape.auto/tracking.html)] The datasets are provided by Baidu Inc. [**`tra.`** **`seg.`** **`det.`**]
+24. [[nuScenes](https://d3u7q4379vrm7e.cloudfront.net/object-detection)] The nuScenes dataset is a large-scale autonomous driving dataset.
+25. [[PreSIL](https://uwaterloo.ca/waterloo-intelligent-systems-engineering-lab/projects/precise-synthetic-image-and-lidar-presil-dataset-autonomous)] Depth information, semantic segmentation (images), point-wise segmentation (point clouds), ground point labels (point clouds), and detailed annotations for all vehicles and people. [[paper](https://arxiv.org/abs/1905.00160)] [**`det.`** **`aut.`**]
+26. [[3D Match](http://3dmatch.cs.princeton.edu/)] Keypoint Matching Benchmark, Geometric Registration Benchmark, RGB-D Reconstruction Datasets. [**`reg.`****`rec.`** **`oth.`**]
+27. [[BLVD](https://github.com/VCCIV/BLVD)] (a) 3D detection, (b) 4D tracking, (c) 5D interactive event recognition and (d) 5D intention prediction. [[ICRA 2019 paper](https://arxiv.org/abs/1903.06405v1)] [**`det.`** **`tra.`** **`aut.`** **`oth.`**]
+28. [[PedX](https://arxiv.org/abs/1809.03605)] 3D Pose Estimation of Pedestrians, more than 5,000 pairs of high-resolution (12MP) stereo images and LiDAR data along with providing 2D and 3D labels of pedestrians. [[ICRA 2019 paper](https://arxiv.org/abs/1809.03605)] [**`pos.`** **`aut.`**]
+29. [[H3D](https://usa.honda-ri.com/H3D)] Full-surround 3D multi-object detection and tracking dataset. [[ICRA 2019 paper](https://arxiv.org/abs/1903.01568)] [**`det.`** **`tra.`** **`aut.`**]
+30. [[Argoverse BY ARGO AI\]](https://www.argoverse.org/) Two public datasets (3D Tracking and Motion Forecasting) supported by highly detailed maps to test, experiment, and teach self-driving vehicles how to understand the world around them.[[CVPR 2019 paper](http://openaccess.thecvf.com/content_CVPR_2019/html/Chang_Argoverse_3D_Tracking_and_Forecasting_With_Rich_Maps_CVPR_2019_paper.html)][**`tra.`****`aut.`**]
+31. [[Matterport3D](https://niessner.github.io/Matterport/)] RGB-D: 10,800 panoramic views from 194,400 RGB-D images. Annotations: surface reconstructions, camera poses, and 2D and 3D semantic segmentations. Keypoint matching, view overlap prediction, normal prediction from color, semantic segmentation, and scene classification. [[3DV 2017 paper](https://arxiv.org/abs/1709.06158)] [[code](https://github.com/niessner/Matterport)] [[blog](https://matterport.com/blog/2017/09/20/announcing-matterport3d-research-dataset/)]
+32. [[SynthCity](https://arxiv.org/abs/1907.04758)] SynthCity is a 367.9M point synthetic full colour Mobile Laser Scanning point cloud. Nine categories. [**`seg.`****`aut.`**]
+33. [[Lyft Level 5](https://level5.lyft.com/dataset/?source=post_page)] Include high quality, human-labelled 3D bounding boxes of traffic agents, an underlying HD spatial semantic map. [**`det.`** **`seg.`** **`aut.`**]
+34. [[SemanticKITTI](http://semantic-kitti.org/)] Sequential Semantic Segmentation, 28 classes, for autonomous driving. All sequences of KITTI odometry labeled. [[ICCV 2019 paper](https://arxiv.org/abs/1904.01416)] [**`seg.`** **`oth.`** **`aut.`**]
+35. [[NPM3D](http://npm3d.fr/paris-lille-3d)] The Paris-Lille-3D has been produced by a Mobile Laser System (MLS) in two different cities in France (Paris and Lille). [**`seg.`**]
+36. [[The Waymo Open Dataset](https://waymo.com/open/)] The Waymo Open Dataset is comprised of high resolution sensor data collected by Waymo self-driving cars in a wide variety of conditions. [**`det.`**]
+37. [[A*3D: An Autonomous Driving Dataset in Challeging Environments](https://github.com/I2RDL2/ASTAR-3D)] A*3D: An Autonomous Driving Dataset in Challeging Environments. [**`det.`**]
+38. [[PointDA-10 Dataset](https://github.com/canqin001/PointDAN)] Domain Adaptation for point clouds.
+39. [[Oxford Robotcar](https://robotcar-dataset.robots.ox.ac.uk/)] The dataset captures many different combinations of weather, traffic and pedestrians. [**`cls.`** **`det.`****`rec.`**]
 
 # 三维重建
+
+## 单目图像
+
+### paper
+
+1. 
 
 ## 结构光
 
@@ -341,6 +476,14 @@
 
 ### paper
 
+1. [Learning Inverse Depth Regression for Multi-View Stereo with Correlation Cost Volume](https://arxiv.org/pdf/1912.11746v1.pdf)
+2. [Cascade Cost Volume for High-Resolution Multi-View Stereo and Stereo Matching](http://arxiv.org/abs/1912.06378v2)
+3. [Point-Based Multi-View Stereo Network](http://arxiv.org/abs/1908.04422v1)
+4. [Recurrent MVSNet for High-resolution Multi-view Stereo Depth Inference](http://arxiv.org/abs/1902.10556v1)
+5. [NRMVS: Non-Rigid Multi-View Stereo](http://arxiv.org/abs/1901.03910v1)
+6. [Multi-View Stereo 3D Edge Reconstruction](http://arxiv.org/abs/1801.05606v1)
+7. [Recurrent MVSNet for High-resolution Multi-view Stereo Depth Inference](https://arxiv.org/abs/1902.10556)
+
 #### 综述
 
 1. [Multi-view stereo: A tutorial](https://www.mendeley.com/catalogue/multiview-stereo-tutorial/)
@@ -390,6 +533,10 @@
 
 1. [Seamless image-based texture atlases using multi-band blending](http://imagine.enpc.fr/publications/papers/ICPR08a.pdf). C. Allène,  J-P. Pons and R. Keriven. ICPR 2008.
 2. [Let There Be Color! - Large-Scale Texturing of 3D Reconstructions](http://www.gcc.tu-darmstadt.de/home/proj/texrecon/). M. Waechter, N. Moehrle, M. Goesele. ECCV 2014
+
+#### Texture Mapping(纹理贴图)
+
+1. [3D Textured Model Encryption via 3D Lu Chaotic Mapping](https://arxiv.org/abs/1709.08364v1)
 
 ### Courses
 
@@ -456,7 +603,49 @@
 
 9、[Joint 3D Face Reconstruction and Dense Face Alignment from A Single Image with 2D-Assisted Self-Supervised Learning](https://arxiv.org/abs/1903.09359)
 
-10、[Face Alignment Across Large Poses: A 3D Solution](
+10、[Face Alignment Across Large Poses: A 3D Solution]()
+
+## 纹理/材料分析与合成
+
+1. Texture Synthesis Using Convolutional Neural Networks (2015)[[Paper\]](https://arxiv.org/pdf/1505.07376.pdf)
+2. Two-Shot SVBRDF Capture for Stationary Materials (SIGGRAPH 2015) [[Paper\]](https://mediatech.aalto.fi/publications/graphics/TwoShotSVBRDF/)
+3. Reflectance Modeling by Neural Texture Synthesis (2016) [[Paper\]](https://mediatech.aalto.fi/publications/graphics/NeuralSVBRDF/)
+4. Modeling Surface Appearance from a Single Photograph using Self-augmented Convolutional Neural Networks (2017)[[Paper\]](http://msraig.info/~sanet/sanet.htm)
+5. High-Resolution Multi-Scale Neural Texture Synthesis (2017) [[Paper\]](https://wxs.ca/research/multiscale-neural-synthesis/)
+6. Reflectance and Natural Illumination from Single Material Specular Objects Using Deep Learning (2017) [[Paper\]](https://homes.cs.washington.edu/~krematas/Publications/reflectance-natural-illumination.pdf)
+7. Joint Material and Illumination Estimation from Photo Sets in the Wild (2017) [[Paper\]](https://arxiv.org/pdf/1710.08313.pdf)
+8. TextureGAN: Controlling Deep Image Synthesis with Texture Patches (2018 CVPR) [[Paper\]](https://arxiv.org/pdf/1706.02823.pdf)
+9. Gaussian Material Synthesis (2018 SIGGRAPH) [[Paper\]](https://users.cg.tuwien.ac.at/zsolnai/gfx/gaussian-material-synthesis/)
+10. Non-stationary Texture Synthesis by Adversarial Expansion (2018 SIGGRAPH) [[Paper\]](http://vcc.szu.edu.cn/research/2018/TexSyn)
+11. Synthesized Texture Quality Assessment via Multi-scale Spatial and Statistical Texture Attributes of Image and Gradient Magnitude Coefficients (2018 CVPR) [[Paper\]](https://arxiv.org/pdf/1804.08020.pdf)
+12. LIME: Live Intrinsic Material Estimation (2018 CVPR) [[Paper\]](https://gvv.mpi-inf.mpg.de/projects/LIME/)
+13. Learning Material-Aware Local Descriptors for 3D Shapes (2018) [[Paper\]](http://www.vovakim.com/papers/18_3DV_ShapeMatFeat.pdf)
+
+## **场景合成/重建**
+
+1. Make It Home: Automatic Optimization of Furniture Arrangement (2011, SIGGRAPH) [[Paper\]](http://people.sutd.edu.sg/~saikit/projects/furniture/index.html)
+2. Interactive Furniture Layout Using Interior Design Guidelines (2011) [[Paper\]](http://graphics.stanford.edu/~pmerrell/furnitureLayout.htm)
+3. Synthesizing Open Worlds with Constraints using Locally Annealed Reversible Jump MCMC (2012) [[Paper\]](http://graphics.stanford.edu/~lfyg/owl.pdf)
+4. Example-based Synthesis of 3D Object Arrangements (2012 SIGGRAPH Asia) [[Paper\]](http://graphics.stanford.edu/projects/scenesynth/)
+5. Sketch2Scene: Sketch-based Co-retrieval and Co-placement of 3D Models (2013) [[Paper\]](http://sweb.cityu.edu.hk/hongbofu/projects/sketch2scene_sig13/#.WWWge__ysb0)
+6. Action-Driven 3D Indoor Scene Evolution (2016) [[Paper\]](https://www.cs.sfu.ca/~haoz/pubs/ma_siga16_action.pdf)
+7. The Clutterpalette: An Interactive Tool for Detailing Indoor Scenes (2015) [[Paper\]](https://www.cs.umb.edu/~craigyu/papers/clutterpalette.pdf)
+8. Relationship Templates for Creating Scene Variations (2016) [[Paper\]](http://geometry.cs.ucl.ac.uk/projects/2016/relationship-templates/)
+9. IM2CAD (2017) [[Paper\]](http://homes.cs.washington.edu/~izadinia/im2cad.html)
+10. Predicting Complete 3D Models of Indoor Scenes (2017) [[Paper\]](https://arxiv.org/pdf/1504.02437.pdf)
+11. Complete 3D Scene Parsing from Single RGBD Image (2017) [[Paper\]](https://arxiv.org/pdf/1710.09490.pdf)
+12. Adaptive Synthesis of Indoor Scenes via Activity-Associated Object Relation Graphs (2017 SIGGRAPH Asia) [[Paper\]](http://arts.buaa.edu.cn/projects/sa17/)
+13. Automated Interior Design Using a Genetic Algorithm (2017) [[Paper\]](https://publik.tuwien.ac.at/files/publik_262718.pdf)
+14. SceneSuggest: Context-driven 3D Scene Design (2017) [[Paper\]](https://arxiv.org/pdf/1703.00061.pdf)
+15. A fully end-to-end deep learning approach for real-time simultaneous 3D reconstruction and material recognition (2017)[[Paper\]](https://arxiv.org/pdf/1703.04699v1.pdf)
+16. Human-centric Indoor Scene Synthesis Using Stochastic Grammar (2018, CVPR)[[Paper\]](http://web.cs.ucla.edu/~syqi/publications/cvpr2018synthesis/cvpr2018synthesis.pdf) [[Supplementary\]](http://web.cs.ucla.edu/~syqi/publications/cvpr2018synthesis/cvpr2018synthesis_supplementary.pdf) [[Code\]](https://github.com/SiyuanQi/human-centric-scene-synthesis)
+17. FloorNet: A Unified Framework for Floorplan Reconstruction from 3D Scans (2018) [[Paper\]](https://arxiv.org/pdf/1804.00090.pdf) [[Code\]](http://art-programmer.github.io/floornet.html)
+18. ScanComplete: Large-Scale Scene Completion and Semantic Segmentation for 3D Scans (2018) [[Paper\]](https://arxiv.org/pdf/1712.10215.pdf)
+19. Configurable 3D Scene Synthesis and 2D Image Rendering with Per-Pixel Ground Truth using Stochastic Grammars (2018) [[Paper\]](https://arxiv.org/pdf/1704.00112.pdf)
+20. Holistic 3D Scene Parsing and Reconstruction from a Single RGB Image (ECCV 2018) [[Paper\]](http://siyuanhuang.com/holistic_parsing/main.html)
+21. Automatic 3D Indoor Scene Modeling from Single Panorama (2018 CVPR) [[Paper\]](http://openaccess.thecvf.com/content_cvpr_2018/papers/Yang_Automatic_3D_Indoor_CVPR_2018_paper.pdf)
+22. Single-Image Piece-wise Planar 3D Reconstruction via Associative Embedding (2019 CVPR) [[Paper\]](https://arxiv.org/pdf/1902.09777.pdf) [[Code\]](https://github.com/svip-lab/PlanarReconstruction)
+23. 3D Scene Reconstruction with Multi-layer Depth and Epipolar Transformers (ICCV 2019) [[Paper\]](https://research.dshin.org/iccv19/multi-layer-depth/)
 
 # 深度图补全
 
