@@ -225,7 +225,7 @@
 8. [[AAAI2019](https://arxiv.org/abs/1811.11731)] CAPNet: Continuous Approximation Projection For 3D Point Cloud Reconstruction Using 2D Supervision. 
 9. [[MM](https://dl.acm.org/citation.cfm?id=3350960)] L2G Auto-encoder: Understanding Point Clouds by Local-to-Global Reconstruction with Hierarchical Self-Attention. 
 10. [SurfNet: Generating 3D shape surfaces using deep residual networks]()
-11. 
+
 
 
 
@@ -287,7 +287,6 @@
 
 ### paper
 
-1. 
 
 ## 结构光
 
