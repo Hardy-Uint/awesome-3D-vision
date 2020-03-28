@@ -4,21 +4,97 @@
 >
 > 主要关注：3D视觉算法、SLAM、vSLAM、计算机视觉、深度学习、自动驾驶、图像处理以及技术干货分享
 >
-> 运营者和嘉宾介绍：运营者来自国内一线大厂的算法工程师，深研3D视觉、深度学习、图像处理、自动驾驶、vSLAM等领域，特邀嘉宾包括国内外知名高校的博士硕士，旷视、商汤、百度、阿里等就职的算法大佬，欢迎一起交流学习
+> 运营者和嘉宾介绍：运营者来自国内一线大厂的算法工程师，深研3D视觉、vSLAM、计算机视觉、点云处理、深度学习、自动驾驶、图像处理、三维重建等领域，特邀嘉宾包括国内外知名高校的博士硕士，旷视、商汤、百度、阿里等就职的算法大佬，欢迎一起交流学习
 
 [TOC]
 
 # 硬件
 
+## 相机技术&参数
+
 [事件相机知识点汇总](https://github.com/uzh-rpg/event-based_vision_resources)
+
+## 相机生产厂家汇总
+
+|      公司名称      |             主要业务             |                   岗位                   |        base         |
+| :----------------: | :------------------------------: | :--------------------------------------: | :-----------------: |
+|      海康威视      |    安防监控、机器视觉解决方案    | 机器视觉算法、三维重建算法、立体视觉算法 |        杭州         |
+|        大华        |      视频监控、机器视觉系统      |        机器视觉算法、立体视觉算法        |        杭州         |
+|      奥比中光      |      3D相机、3D视觉解决方案      |        3D视觉、三维重建、立体视觉        |   深圳/西安/上海    |
+| 北京凌云光技术集团 |    工业视觉、解决方案、3D相机    |                 图像算法                 |        北京         |
+|      大恒图像      |  机器视觉系统、3D相机、3D传感器  |          图像算法、机器视觉算法          |        北京         |
+|       基恩士       |    机器视觉解决方案、视觉产品    |                                          |      上海/苏州      |
+|       康耐视       |     机器视觉解决方案、传感器     |                 机器视觉                 |   上海/苏州/杭州    |
+|   埃尔森智能科技   |   机器人3D视觉、3D相机、结构光   |                                          |        郑州         |
+|                    |        立体视觉、双目感知        |                                          |        北京         |
+|      阿丘科技      |          AI视觉解决方案          |        AI算法、视觉算法、机器视觉        |   北京/苏州/深圳    |
+|      图漾科技      |         3D视觉系统、产品         |            视觉算法、图像处理            |        上海         |
+|      精锐视觉      |            工业AI视觉            |                 图像算法                 |      深圳/上海      |
+|      华夏视科      |        工业视觉、图像检测        |                 图像算法                 |      北京/上海      |
+|    Sick（德国）    |         机器视觉解决方案         |              机器视觉工程师              | 北京/上海/深圳/广州 |
+|      光鉴科技      |          3D视觉解决方案          |           TOF算法、3D视觉算法            |        上海         |
+|      征图新视      |         机器视觉解决方案         |            机器视觉、深度学习            |   深圳/常州/苏州    |
+|     中星微电子     |             图像芯片             |          深度学习、视频图像处理          |      北京/上海      |
+|      捷尚视觉      |           视频智能分析           |                 图像算法                 |        杭州         |
+|    先临三维科技    |       三维扫描仪、三维成像       |          三维视觉算法、点云算法          |        杭州         |
+|      华睿科技      |             机器视觉             |              机器视觉工程师              |        杭州         |
+|      蓝芯科技      |      视觉系统、3D视觉传感器      |                                          |        杭州         |
+|      微视图像      |    机器视觉、工业相机、3D相机    |                                          |        北京         |
+|     库柏特科技     |        机器人、3D视觉产品        |                                          |        武汉         |
+|      辰视智能      |    结构光、3D系统、双目、多目    |                                          |        深圳         |
+|   星上维智能科技   | 结构光、三维机器视觉、三维扫描仪 |                                          |        广州         |
+|      创科视觉      |       机器视觉系统、3D相机       |                                          |        深圳         |
 
 # 相机标定
 
+### 综述
 
+1. [线阵相机标定方法综述](http://www.opticsjournal.net/Articles/Abstract?aid=OJe133f6606f9fe076)
 
-# 3D视觉实战代码汇总
+### 单相机标定
 
-1. https://github.com/sunglok/3dv_tutorial(涉及SLAM、多视图几何代码示例)
+1. [相机标定误差因素分析](http://www.cnki.com.cn/Article/CJFDTotal-HBYD201201014.htm)
+2. [Fully automatic camera calibration method based on circular markers基于圆形标志点的全自动相机标定方法](http://www.cnki.com.cn/Article/CJFDTotal-YQXB200902028.htm)
+3. [Accurate camera calibration using iterative refinement of control points](http://xueshu.baidu.com/usercenter/paper/show?paperid=a68a76813662e8a8ee64f377a8516adb&site=xueshu_se)
+4. [Accurate Feature Extraction and Control Point Correction for Camera Calibration with a Mono-Plane Target](http://xueshu.baidu.com/usercenter/paper/show?paperid=7a1bfac77a6adb17287b5449a327cd70&site=xueshu_se)
+5. [基于主动红外辐射标定板的超广角红外相机标定](http://www.opticsjournal.net/Articles/Abstract?aid=OJ191105000133w3z6B9)
+6. [基于相位标靶的相机标定](http://www.opticsjournal.net/Articles/Abstract?aid=OJ1811210000185B8DaG)
+7. [基于广义成像模型的Scheimpflug相机标定方法](http://www.opticsjournal.net/Articles/Abstract?aid=OJ1808090000414z6C9F)
+8. [多几何约束下的鱼眼相机单像高精度标定](http://www.opticsjournal.net/Articles/Abstract?aid=OJ181115000101pWsZv2)
+
+### 手眼标定
+
+1. [一种新的机器人手眼关系标定方法](http://xueshu.baidu.com/usercenter/paper/show?paperid=ac40e02979ac1aa62cfaf5b3e9365a7b&site=xueshu_se)
+
+### 其它
+
+1. [基于张正友标定法的红外靶标系统](http://www.opticsjournal.net/Articles/Abstract?aid=OJ200119000058dKgMjP)
+
+# 3D全景相机
+
+> 360°环视
+
+### 鱼眼相机标定
+
+[A  Practical  Toolbox  for  Calibrating Omnidirectional Cameras]()
+
+### 多相机拼接
+
+> 主要通过SIFT、SURF、Harris等算法进行特征点对应匹配。
+
+# 3D视觉资源汇总
+
+## 书籍
+
+1. [视觉测量]()[张广军]
+2. [机器人视觉测量与控制]()[徐德，谭民，李原]
+3. [Machine Vision 2016: Automated Visual Inspection: Theory, Practice and Applications]()
+
+## 资源
+
+[https://github.com/timzhang642/3D-Machine-Learning](https://github.com/timzhang642/3D-Machine-Learning)
+
+https://github.com/sunglok/3dv_tutorial(涉及SLAM、多视图几何代码示例)
 
 # SLAM
 
@@ -28,6 +104,10 @@
 
 [https://github.com/tzutalin/awesome-visual-slam](https://github.com/tzutalin/awesome-visual-slam)
 
+https://github.com/kanster/awesome-slam
+
+https://github.com/YoujieXia/Awesome-SLAM
+
 [Recent_SLAM_Research](https://github.com/YiChenCityU/Recent_SLAM_Research)
 
 [https://github.com/youngguncho/awesome-slam-datasets](https://github.com/youngguncho/awesome-slam-datasets)
@@ -36,7 +116,25 @@
 
 [https://github.com/ckddls1321/SLAM_Resources](https://github.com/ckddls1321/SLAM_Resources)
 
-## Books
+## 激光SLAM
+
+> 分为前端和后端。其中前端主要完成匹配和位置估计，后端主要完成进一步的优化约束。
+>
+> 整个SLAM大概可以分为前端和后端，前端相当于VO（视觉里程计），研究帧与帧之间变换关系。首先提取每帧图像特征点，利用相邻帧图像，进行特征点匹配，然后利用RANSAC去除大噪声，然后进行匹配，得到一个pose信息（位置和姿态），同时可以利用IMU（Inertial measurement unit惯性测量单元）提供的姿态信息进行滤波融合。
+>
+> 后端则主要是对前端出结果进行优化，利用滤波理论（EKF、UKF、PF）、或者优化理论TORO、G2O进行树或者图的优化。最终得到最优的位姿估计。
+
+### 数据预处理
+
+### 点云匹配
+
+### 地图构建
+
+
+
+## 视觉SLAM
+
+### Books
 
 - [视觉SLAM十四讲]() 高翔
 - [机器人学中的状态估计]()
@@ -47,7 +145,7 @@
 - [Multiple View Geometry in Computer Vision](http://www.robots.ox.ac.uk/~vgg/hzbook/) by Richard Hartley and Andrew Zisserman, 2004
 - [Numerical Optimization](http://home.agh.edu.pl/~pba/pdfdoc/Numerical_Optimization.pdf) by Jorge Nocedal and Stephen J. Wright, 1999
 
-## Courses&&Lectures
+### Courses&&Lectures
 
 - [SLAM Tutorial@ICRA 2016](http://www.dis.uniroma1.it/~labrococo/tutorial_icra_2016/)
 - [Geometry and Beyond - Representations, Physics, and Scene Understanding for Robotics](http://rss16-representations.mit.edu/) at Robotics: Science and Systems (2016)
@@ -64,7 +162,7 @@
 - [Robust and Efficient Real-time Mapping for Autonomous Robots](https://www.youtube.com/watch?v=_W3Ua1Yg2fk) at CMU RI seminar by Michael Kaess (2014)
 - [KinectFusion - Real-time 3D Reconstruction and Interaction Using a Moving Depth Camera](https://www.youtube.com/watch?v=bRgEdqDiOuQ) by David Kim (2012)
 
-## Code
+### Code
 
 1. [ORB-SLAM](https://github.com/raulmur/ORB_SLAM)
 2. [LSD-SLAM](https://github.com/tum-vision/lsd_slam)
@@ -87,6 +185,10 @@
 | [SVO semi-direct Visual Odometry](https://github.com/uzh-rpg/rpg_svo) | C++/ROS  | GNU General Public License |
 
 # 计算机视觉
+
+## 资源汇总
+
+
 
 ## Books
 
@@ -128,8 +230,6 @@
 
 2、[https://github.com/endymecy/awesome-deeplearning-resources](https://github.com/endymecy/awesome-deeplearning-resources)
 
-
-
 # 机器学习
 
 ## Github link
@@ -138,9 +238,145 @@
 
 # 3D点云
 
-## 汇总
+## 点云标注工具
 
-## 点云识别
+### 开源
+
+1. [Semantic.editor](https://github.com/MR-520DAI/semantic-segmentation-editor)
+
+### 商用
+
+> 商用软件很多，阿里、腾讯、百度、京东都有对应业务
+
+
+
+## 点云获取
+
+> 传统的点云获取技术包括非接触式测量和接触式测量两种，它们的主要区别在于，在测量过程中测头是否与工件的表面相接触。
+>
+> 非接触式测量是利用光学原理的方法采集数据，例如结构光法、测距法以及干涉法等。该方法的优点在于测量速度较快、测量精度高，并且能够获得高密度点云数据，但其测量精度易受外界因素干扰，而且测量物
+> 体表面的反射光与环境光对测量精度也有一定影响。
+>
+> 相反，接触式测量是通过将测头上的测量传感器与被测物体的外表面相接触，然后通过移动测头来读取物体表面点的三维坐标值。该方法的优点在于测头的结构相对固定，并且其测量结果不受被测物体表面的材料与表面特性等因素的影响。这种方法的不足在于，由于测头长期与被测物体表面相接触，易产生磨损，并且这种测量方式的测量速度较慢，不适合测量几何结构较复杂的物体。
+
+## 点云应用场景
+
+> 逆向工程、游戏人物重建、文物保护、数字博物馆、医疗辅助、三维城市建模
+
+## 点云种类
+
+> 不同的点云获取技术获取的点云数据类型不同，根据点云数据中点的分布情况可将点云数据划分为以下四种类型
+
+#### 散乱点云
+
+散乱点云是指所有数据点在空间中以散乱状态分布，任意两点之间没有建立拓扑连接关系。一般而言，激光点测量系统获得的点云数据以及坐标测量机在随机扫描状态下获得的点云数据都为散乱点云数据。
+
+#### 扫描线点云
+
+测量设备所获得的三维点云数据是由多条直线或曲线构成，点与点之间有一定的拓扑连接关系。一般而言，这种点云数据类型常见于扫描式点云数据中。
+
+#### 网格化点云
+
+网格化点云是指点云数据中任意一点，均对应于其参数域所对应的一个均匀网格的顶点。当对空间散乱点云进行网格化插值时，所获得的点云数据即为网格化点云数据。
+
+#### 多边形点云
+
+多边形点云是指分布在一组平面内的点云数据，该组平面内的平面两两互相平行，并且一个平面内距离最近的点连接起来可以形成平面多边形。这种点云数据常见于等高线测量、CT 测量等获得的点云数据中。
+
+## 点云去噪&滤波
+
+> 主要包括双边滤波、高斯滤波、条件滤波、直通滤波、随机采样一致滤波、VoxelGrid滤波等
+>
+> 三角网格去噪算法、
+
+1. [基于K-近邻点云去噪算法的研究与改进](http://www.cnki.com.cn/Article/CJFDTotal-JSJY200904032.htm)
+2. [Point cloud denoising based on tensor Tucker decomposition](https://arxiv.org/abs/1902.07602v2)
+3. [3D Point Cloud Denoising using Graph Laplacian Regularization of a Low Dimensional Manifold Model](https://arxiv.org/abs/1803.07252v2)
+
+#### 有序点云去噪
+
+> 孤立点排异法、曲线拟合法、弦高差法、全局能量法和滤波法.
+>
+> 孤立点排异法是通过观察点云数据，然后将与扫描线偏离较大的点剔除掉，从而达到去噪的目的。这类方法简单，可除去比较明显的噪声点，但缺点是只能对点云做初步的去噪处理，并不能滤除与真实点云数据混合在一起的噪声数据点。曲线拟合法是根据给定数据点的首末点，然后通过最小二乘等方法拟合一条曲线，通常为3到4 阶，最后计算中间的点到该曲线的距离，如果该距离大于给定阈值，则该点为噪声点，予以删
+> 除，相反，如果该距离小于给定阈值，则该点为正常点，应该保留。弦高差法通过连接给定点集的首末点形成弦，然后求取中间每个点到该弦的距离，如果该距离小于给定阈值，则该点为正常点，予以保留，相反，若大于给定阈值，则该点为噪声点，予以删除。全局能量法通常用于网格式点云去噪，它通过建立整个曲面的能量方程，并求该方程在约束情况下的能量值的最小值。可以看出，这是一个全局最优化问题，因为网格数量比较大，因此会消耗大量的计算机资源与计算时间，而且由于约束方程是建立在整体网格的基础上，所以对于局部形状的去噪效果并不是很好。滤波法也是一种常用的有序点云去噪方法，它通过运用信号处理中的相关方法，使用合适的滤波函数对点云数据进行去噪处理，常用的滤波方法主要包括高斯滤波、均值滤波以及中值滤波法等。
+
+#### 无序点云去噪&空间散乱点云去噪算法
+
+> 目前，针对空间散乱点云数据去噪方法，主要分为两类方法，即基于网格模型的去噪方法和直接对空间点云数据进行去噪的方法。
+>
+> 其中，基于网格模型的去噪方法需要首先建立点云的三角网格模型，然后计算所有三角面片的纵横比和顶点方向的曲率值，并将该值与相应的阈值进行比较，若小于阈值，则为正常点，予以保留，相反，则为噪声点，予以删除。由于该方法需要对空间点云数据进行三角网格剖分，所以，往往比较复杂，并需要大量计算。
+
+## 点云精简
+
+> 采用三维激光扫描仪获得的点云数据往往**十分密集**，点云数据中点的数量往往高达千万级甚至数亿级，即使对点云数据进行了去噪处理，点云数据中点的数量还是很多，所以往往不会直接使用这些原始点云数据进行曲面重建等工作，因为这会使后续处理过程变得耗时并且消耗过多的计算机资源，而且重构的曲面，其精度也不一定高，甚至出现更大的误差。所以，在进行空间点云曲面重建之前，往往需要对高密度的点云数据进
+> 行点云精简操作。点云精简的目的是在保持原始点云的形状特征以及几何特征信息的前提下，尽量删除多余的数据点。
+>
+> 目前，空间散乱点云数据的精简方法主要分为两大类：**基于三角网格模型的空间点云精简方法**与**直接基于数据点的空间点云精简方法**。
+>
+> 其中，基于三角网格模型的空间点云精简方法需要先对点云数据进行三角剖分处理，建立其相应的三角网格拓扑结构，然后再对该三角网格进行处理，并将区域内那些形状变化较小的三角形进行合并，最后删除相关的三角网格顶点，从而达到点云数据精简的目的。这种方法需要对点云数据建立其相应的三角网格，该过程比较复杂，且因为需要存储网格数据，故需要消耗大量的计算机系统资源，并且该方法的抗噪能力较弱，对含有噪声的点云数据，构造的三角网格可能会出现变形等情况，因此精简后的点云数据经过曲面重建后的
+> 模型与原始点云经过曲面重建后的模型可能大不相同。因此，目前关于直接基于点云数据的精简方法成为点云精简方法的主流。这种方法依据点云数据点之间的空间位置关系来建立点云的拓扑连接关系，并根据建立的拓扑连接关系计算点云数据中每个数据点的几何特征信息，最后根据这些特征信息来对点云数据进行点云精简处理。相比基于三角网格的空间点云精简方法，由于直接基于点云数据点的精简方法无需计算和存储复杂的三角网格结构，使得其精简的效率相对较高。因此，本章只研究直接基于空间点云数据的精简算法。
+
+
+
+其中基于空间点云精简方法主要有：空间包围盒法、基于聚类的方法、法向偏差法、曲率精简法、平局点距法以及均匀栅格划分法。
+
+#### Paper
+
+1. 点模型的几何图像简化法
+2. 基于相似性的点模型简化算法
+3. 基于最小曲面距离的快速点云精简算法
+4. 大规模点云选择及精简
+5. 一种基于模糊聚类的海量测量数据简化方法
+6. 基于均值漂移聚类的点模型简化方法
+7. 基于局部曲面拟合的散乱点云简化方法
+
+## 点云关键点
+
+> 常见的三维点云关键点提取算法有一下几种：ISS3D、Harris3D、NARF、SIFT3D，这些算法在PCL库中都有实现，其中NARF算法是用的比较多的
+
+## 点云描述
+
+> 如果要对一个三维点云进行描述，光有点云的位置是不够的，常常需要计算一些额外的参数，比如法线方向、曲率、文理特征等等。如同图像的特征一样，我们需要使用类似的方式来描述三维点云的特征。
+>
+> 常用的特征描述算法有：法线和曲率计算、特征值分析、PFH、FPFH、SHOT、VFH、CVFH、3D Shape Context、Spin Image等。PFH：点特征直方图描述子，FPFH：跨苏点特征直方图描述子，FPFH是PFH的简化形式。
+
+
+
+## 点云线、面拟合
+
+> 针对直线拟合：RANSAC算法、最小二乘法、平面相交法
+>
+> 针对曲线拟合：拉格朗日插值法、最小二乘法、Bezier曲线拟合法、B样条曲线法（二次、三次B样条曲线拟合）
+>
+> 针对平面拟合：主成成分分析、最小二乘法、粗差探测法、抗差估计法
+>
+> 针对曲面拟合：最小二乘法（正交最小二乘、移动最小二乘）、NURBS、 Bezier 
+
+1. 三维激光扫描拟合平面自动提取算法
+2. 点云平面拟合新方法
+3. 海量散乱点的曲面重建算法研究
+4. 一种稳健的点云数据平面拟合方法 
+5. 迭代切片算法在点云曲面拟合中的应用
+6. [基于最小二乘的点云叶面拟合算法研究](http://www.cqvip.com/QK/97059X/201405/661608237.html)
+7. [点云曲面边界线的提取](http://d.wanfangdata.com.cn/Conference/7057652)
+
+## 点云体积计算
+
+> 基于三维点云求取物理模型体积的研究算法大致可分为以下 4 大类。
+>
+> 1.凸包算法：使用凸包模型近似表示不规则体，再通过把凸包模型切片分割进行累加、或将凸包模型分解为上下两个三角网格面，采用正投影法求取两者的投影体积，其差即所求体积。此方法适用于凸模型，非凸模型误差较大。
+>
+> 2.模型重建法：在得到点云数据后，使用三角面片构建物理模型的方法求得体积。该算法受点云密度、生成的三角网格数量、点精度影响较大，易产生孔洞。
+>
+> 3.切片法：将点云沿某一坐标轴方向进行切片处理，再计算切片上下两表面的面积，通过累加切片体积求得总体积。该方法受到切片厚度的影响，切片厚度越小，计算精度越高但会导致计算效率下降。
+>
+> 4.投影法：先将点云投影进行三角形剖分，再将投影点与其原对应点构建出五面体，通过累加五面体体积求得总体积。该算法同样容易产生孔洞。上述算法，无论是通过三维点云先构建物理模型再求体积、还是基于三维点云通过几何方法直接求体积，当激光雷达采集的三维点云存在密度不均匀、空间物体存在过渡带或过渡线等问题时，重建三维模型的误差较大，体积计算精度不高。
+
+## 点云识别&分类
+
+> 分类：基于点的分类，基于分割的分类，监督分类与非监督分类
+>
+> 除此之外，还可以基于描述向量/关键点描述进行分类。
 
 1. [3D ShapeNets: A Deep Representation for Volumetric Shapes](http://3dvision.princeton.edu/projects/2014/3DShapeNets/paper.pdf)
 2. [PartNet: A Large-scale Benchmark for Fine-grained and Hierarchical Part-level 3D Object Understanding](https://arxiv.org/abs/1812.02713)
@@ -158,7 +394,19 @@
 
 
 
-## 点云匹配&对齐&注册
+## 点云匹配&配准&对齐&注册
+
+> 点云配准的概念也可以类比于二维图像中的配准，只不过二维图像配准获取得到的是x，y，alpha，beta等放射变化参数，三维点云配准可以模拟三维点云的移动和对齐，也就是会获得一个旋转矩阵和一个平移向量，通常表达为一个4×3的矩阵，其中3×3是旋转矩阵，1x3是平移向量。严格说来是6个参数，因为旋转矩阵也可以通过罗格里德斯变换转变成1*3的旋转向量。
+>
+> 常用的点云配准算法有两种：**正太分布变换**和著名的**ICP点云配准**，此外还有许多其它算法，列举如下：
+>
+> ICP：稳健ICP、point to plane ICP、point to line ICP、MBICP、GICP
+>
+> NDT 3D、Multil-Layer NDT
+>
+> FPCS、KFPSC、SAC-IA
+>
+> Line Segment Matching、ICL
 
 1. [An ICP variant using a point-to-line metric](https://authors.library.caltech.edu/18274/1/Censi2008p84782008_Ieee_International_Conference_On_Robotics_And_Automation_Vols_1-9.pdf)
 2. [Generalized-ICP](https://www.researchgate.net/publication/221344436_Generalized-ICP)
@@ -186,6 +434,8 @@
 24. [[CVPR2019](http://openaccess.thecvf.com/content_CVPR_2019/papers/Deng_3D_Local_Features_for_Direct_Pairwise_Registration_CVPR_2019_paper.pdf)] 3D Local Features for Direct Pairwise Registration.
 25. [[ICCV2019](http://openaccess.thecvf.com/content_ICCV_2019/papers/Zhou_Robust_Variational_Bayesian_Point_Set_Registration_ICCV_2019_paper.pdf)] Robust Variational Bayesian Point Set Registration.
 26. [[ICRA2019](https://arpg.colorado.edu/papers/hmrf_icp.pdf)] Robust low-overlap 3-D point cloud registration for outlier rejection. 
+27. Learning multiview 3D point cloud registration[[CVPR2020]()]
+28. 
 
 
 
@@ -193,44 +443,64 @@
 
 1. [[IROS2017](https://ieeexplore.ieee.org/document/8206584)] Analyzing the quality of matched 3D point clouds of objects.
 
-
-
 ## 点云分割
 
-1. [SceneEncoder: Scene-Aware Semantic Segmentation of Point Clouds with A Learnable Scene Descriptor](https://arxiv.org/abs/2001.09087v1)
-2. [From Planes to Corners: Multi-Purpose Primitive Detection in Unorganized 3D Point Clouds](https://arxiv.org/abs/2001.07360?context=cs.RO)
-3. [Learning and Memorizing Representative Prototypes for 3D Point Cloud Semantic and Instance Segmentation](http://arxiv.org/abs/2001.01349)
-4. [JSNet: Joint Instance and Semantic Segmentation of 3D Point Clouds](https://arxiv.org/abs/1912.09654v1)
-5. [PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation](https://arxiv.org/abs/1612.00593v2)
-6. [PointNet++: Deep Hierarchical Feature Learning on Point Sets in a Metric Space](https://arxiv.org/abs/1706.02413v1)
-7. [SyncSpecCNN: Synchronized Spectral CNN for 3D Shape Segmentation,CVPR2017]()
-8. [[ICRA2017](https://ieeexplore.ieee.org/document/7989618)] SegMatch: Segment based place recognition in 3D point clouds.
-9. [[3DV2017](http://segcloud.stanford.edu/segcloud_2017.pdf)] SEGCloud: Semantic Segmentation of 3D Point Clouds. 
-10. [[CVPR2018](http://openaccess.thecvf.com/content_cvpr_2018/papers/Huang_Recurrent_Slice_Networks_CVPR_2018_paper.pdf)] Recurrent Slice Networks for 3D Segmentation of Point Clouds. 
-11. [[CVPR2018](http://openaccess.thecvf.com/content_cvpr_2018/papers/Wang_SGPN_Similarity_Group_CVPR_2018_paper.pdf)] SGPN: Similarity Group Proposal Network for 3D Point Cloud Instance Segmentation.
-12. [[CVPR2018](http://openaccess.thecvf.com/content_cvpr_2018/papers/Landrieu_Large-Scale_Point_Cloud_CVPR_2018_paper.pdf)] Large-scale Point Cloud Semantic Segmentation with Superpoint Graphs.
-13. [[ECCV2018](http://openaccess.thecvf.com/content_ECCV_2018/papers/Xiaoqing_Ye_3D_Recurrent_Neural_ECCV_2018_paper.pdf)] 3D Recurrent Neural Networks with Context Fusion for Point Cloud Semantic Segmentation.
-14. [[CVPR2019](https://arxiv.org/abs/1904.00699v1)] JSIS3D: Joint Semantic-Instance Segmentation of 3D Point Clouds with Multi-Task Pointwise Networks and Multi-Value Conditional Random Fields. 
-15. [[CVPR2019](https://arxiv.org/abs/1903.00709)] PartNet: A Recursive Part Decomposition Network for Fine-grained and Hierarchical Shape Segmentation. 
-16. [[ICCV2019](http://openaccess.thecvf.com/content_ICCV_2019/papers/Lahoud_3D_Instance_Segmentation_via_Multi-Task_Metric_Learning_ICCV_2019_paper.pdf)] 3D Instance Segmentation via Multi-Task Metric Learning.
-17. [[IROS2019](https://arxiv.org/pdf/1909.01643v1.pdf)] PASS3D: Precise and Accelerated Semantic Segmentation for 3D Point Cloud.
+> 点云的分割也算是一个大Topic了，这里因为多了一维就和二维图像比多了许多问题，点云分割又分为区域提取、线面提取、语义分割与聚类等。同样是分割问题，点云分割涉及面太广，确实是三言两语说不清楚的。只有从字面意思去理解了，遇到具体问题再具体归类。一般说来，点云分割是目标识别的基础。
+>
+> 分割主要有四种方法：基于边的区域分割、基于面的区域分割、基于聚类的区域分割、混合区域分割方法、深度学习方法
+>
+> 分割：区域声场、Ransac线面提取、NDT-RANSAC、K-Means（谱聚类）、Normalize Cut、3D Hough Transform(线面提取)、连通分析
+
+1.  [基于局部表面凸性的散乱点云分割算法研究](http://ir.ciomp.ac.cn/handle/181722/57569?mode=full&submit_simple=Show+full+item+record)
+2.  [三维散乱点云分割技术综述](http://www.cnki.com.cn/Article/CJFDTotal-ZZGX201005012.htm)
+3.  [基于聚类方法的点云分割技术的研究](http://cdmd.cnki.com.cn/Article/CDMD-10213-1015979890.htm)
+4.  [SceneEncoder: Scene-Aware Semantic Segmentation of Point Clouds with A Learnable Scene Descriptor](https://arxiv.org/abs/2001.09087v1)
+5.  [From Planes to Corners: Multi-Purpose Primitive Detection in Unorganized 3D Point Clouds](https://arxiv.org/abs/2001.07360?context=cs.RO)
+6.  [Learning and Memorizing Representative Prototypes for 3D Point Cloud Semantic and Instance Segmentation](http://arxiv.org/abs/2001.01349)
+7.  [JSNet: Joint Instance and Semantic Segmentation of 3D Point Clouds](https://arxiv.org/abs/1912.09654v1)
+8.  [PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation](https://arxiv.org/abs/1612.00593v2)
+9.  [PointNet++: Deep Hierarchical Feature Learning on Point Sets in a Metric Space](https://arxiv.org/abs/1706.02413v1)
+10.  [SyncSpecCNN: Synchronized Spectral CNN for 3D Shape Segmentation,CVPR2017]()
+11.  [[ICRA2017](https://ieeexplore.ieee.org/document/7989618)] SegMatch: Segment based place recognition in 3D point clouds.
+12.  [[3DV2017](http://segcloud.stanford.edu/segcloud_2017.pdf)] SEGCloud: Semantic Segmentation of 3D Point Clouds. 
+13.  [[CVPR2018](http://openaccess.thecvf.com/content_cvpr_2018/papers/Huang_Recurrent_Slice_Networks_CVPR_2018_paper.pdf)] Recurrent Slice Networks for 3D Segmentation of Point Clouds. 
+14.  [[CVPR2018](http://openaccess.thecvf.com/content_cvpr_2018/papers/Wang_SGPN_Similarity_Group_CVPR_2018_paper.pdf)] SGPN: Similarity Group Proposal Network for 3D Point Cloud Instance Segmentation.
+15.  [[CVPR2018](http://openaccess.thecvf.com/content_cvpr_2018/papers/Landrieu_Large-Scale_Point_Cloud_CVPR_2018_paper.pdf)] Large-scale Point Cloud Semantic Segmentation with Superpoint Graphs.
+16.  [[ECCV2018](http://openaccess.thecvf.com/content_ECCV_2018/papers/Xiaoqing_Ye_3D_Recurrent_Neural_ECCV_2018_paper.pdf)] 3D Recurrent Neural Networks with Context Fusion for Point Cloud Semantic Segmentation.
+17.  [[CVPR2019](https://arxiv.org/abs/1904.00699v1)] JSIS3D: Joint Semantic-Instance Segmentation of 3D Point Clouds with Multi-Task Pointwise Networks and Multi-Value Conditional Random Fields. 
+18.  [[CVPR2019](https://arxiv.org/abs/1903.00709)] PartNet: A Recursive Part Decomposition Network for Fine-grained and Hierarchical Shape Segmentation. 
+19.  [[ICCV2019](http://openaccess.thecvf.com/content_ICCV_2019/papers/Lahoud_3D_Instance_Segmentation_via_Multi-Task_Metric_Learning_ICCV_2019_paper.pdf)] 3D Instance Segmentation via Multi-Task Metric Learning.
+20.  [[IROS2019](https://arxiv.org/pdf/1909.01643v1.pdf)] PASS3D: Precise and Accelerated Semantic Segmentation for 3D Point Cloud.
+
+## 点云目标检索
+
+> 这是点云数据处理中一个偏应用层面的问题，简单说来就是Hausdorff距离常被用来进行深度图的目标识别和检索，现在很多三维[人脸识别](https://cloud.tencent.com/product/facerecognition?from=10680)都是用这种技术来做的。
 
 ## 点云三维重建
 
-1. [Scalable Surface Reconstruction from Point Clouds with Extreme Scale and Density Diversity,CVPR2017](http://openaccess.thecvf.com/content_cvpr_2017/papers/Mostegel_Scalable_Surface_Reconstruction_CVPR_2017_paper.pdf)
-2. [[ICCV2017](http://openaccess.thecvf.com/content_ICCV_2017/papers/Nan_PolyFit_Polygonal_Surface_ICCV_2017_paper.pdf)] PolyFit: Polygonal Surface Reconstruction from Point Clouds.
-3. [[ICCV2017](http://openaccess.thecvf.com/content_ICCV_2017/papers/Ladicky_From_Point_Clouds_ICCV_2017_paper.pdf)] From Point Clouds to Mesh using Regression.
-4. [[ECCV2018](http://openaccess.thecvf.com/content_ECCV_2018/papers/Kejie_Li_Efficient_Dense_Point_ECCV_2018_paper.pdf)] Efficient Dense Point Cloud Object Reconstruction using Deformation Vector Fields. 
-5. [[ECCV2018](http://openaccess.thecvf.com/content_ECCV_2018/papers/Benjamin_Eckart_Fast_and_Accurate_ECCV_2018_paper.pdf)] HGMR: Hierarchical Gaussian Mixtures for Adaptive 3D Registration.
-6. [[AAAI2018](https://aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16530/16302)] Learning Efficient Point Cloud Generation for Dense 3D Object Reconstruction. 
-7. [[CVPR2019](https://www.researchgate.net/publication/332240602_Robust_Point_Cloud_Based_Reconstruction_of_Large-Scale_Outdoor_Scenes)] Robust Point Cloud Based Reconstruction of Large-Scale Outdoor Scenes. 
-8. [[AAAI2019](https://arxiv.org/abs/1811.11731)] CAPNet: Continuous Approximation Projection For 3D Point Cloud Reconstruction Using 2D Supervision. 
-9. [[MM](https://dl.acm.org/citation.cfm?id=3350960)] L2G Auto-encoder: Understanding Point Clouds by Local-to-Global Reconstruction with Hierarchical Self-Attention. 
-10. [SurfNet: Generating 3D shape surfaces using deep residual networks]()
+> 我们获取到的点云数据都是一个个孤立的点，如何从一个个孤立的点得到整个曲面呢，这就是三维重建的topic。
+>
+> 在玩kinectFusion时候，如果我们不懂，会发现曲面渐渐变平缓，这就是重建算法不断迭代的效果。我们采集到的点云是充满噪声和孤立点的，三维重建算法为了重构出曲面，常常要应对这种噪声，获得看上去很舒服的曲面。
+>
+> 常用的三维重建算法和技术有：
+>
+> 泊松重建、Delauary triangulatoins(Delauary三角化)
+>
+> 表面重建，人体重建，建筑物重建，输入重建
+>
+> 实时重建：重建纸杯或者农作物4D生长台式，人体姿势识别，表情识别
 
-
-
-
+1. [改进的点云数据三维重建算法](http://www.opticsjournal.net/Articles/Abstract?aid=OJ4723ebf4b0b0762)
+2. [Scalable Surface Reconstruction from Point Clouds with Extreme Scale and Density Diversity,CVPR2017](http://openaccess.thecvf.com/content_cvpr_2017/papers/Mostegel_Scalable_Surface_Reconstruction_CVPR_2017_paper.pdf)
+3. [[ICCV2017](http://openaccess.thecvf.com/content_ICCV_2017/papers/Nan_PolyFit_Polygonal_Surface_ICCV_2017_paper.pdf)] PolyFit: Polygonal Surface Reconstruction from Point Clouds.
+4. [[ICCV2017](http://openaccess.thecvf.com/content_ICCV_2017/papers/Ladicky_From_Point_Clouds_ICCV_2017_paper.pdf)] From Point Clouds to Mesh using Regression.
+5. [[ECCV2018](http://openaccess.thecvf.com/content_ECCV_2018/papers/Kejie_Li_Efficient_Dense_Point_ECCV_2018_paper.pdf)] Efficient Dense Point Cloud Object Reconstruction using Deformation Vector Fields. 
+6. [[ECCV2018](http://openaccess.thecvf.com/content_ECCV_2018/papers/Benjamin_Eckart_Fast_and_Accurate_ECCV_2018_paper.pdf)] HGMR: Hierarchical Gaussian Mixtures for Adaptive 3D Registration.
+7. [[AAAI2018](https://aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16530/16302)] Learning Efficient Point Cloud Generation for Dense 3D Object Reconstruction. 
+8. [[CVPR2019](https://www.researchgate.net/publication/332240602_Robust_Point_Cloud_Based_Reconstruction_of_Large-Scale_Outdoor_Scenes)] Robust Point Cloud Based Reconstruction of Large-Scale Outdoor Scenes. 
+9. [[AAAI2019](https://arxiv.org/abs/1811.11731)] CAPNet: Continuous Approximation Projection For 3D Point Cloud Reconstruction Using 2D Supervision. 
+10. [[MM](https://dl.acm.org/citation.cfm?id=3350960)] L2G Auto-encoder: Understanding Point Clouds by Local-to-Global Reconstruction with Hierarchical Self-Attention. 
+11. [SurfNet: Generating 3D shape surfaces using deep residual networks]()
 
 ## 点云其它
 
@@ -285,17 +555,193 @@
 
 # 三维重建
 
+资料汇总：https://github.com/openMVG/awesome_3DReconstruction_list
+
 ## 单目图像
 
-### paper
+> 主要分为基于SfM三维重建和基于Deep learning的三维重建方法，sfM方法在下节将会做详细介绍，基于深度学习方式，主要通过RGB图像生成深度图。
+
+### Paper
+
+1. Unsupervised Monocular Depth Estimation with Left-Right Consistency
+2. Unsupervised Learning of Depth and Ego-Motion from Video
+3. Deep Ordinal Regression Network for Monocular Depth Estimation
+4. Depth from Videos in the Wild
+5. Attention-based Context Aggregation Network for Monocular Depth Estimation 
+6. Depth Map Prediction from a Single Image using a Multi-Scale Deep Network（NIPS2014）
+7. Predicting depth, surface normals and semantic labels with a common multi-scale convolutional architecture（ICCV2015)
+8. Deeper Depth Prediction with Fully Convolutional Residual Networks
+9. Multi-Scale Continuous CRFs as Sequential Deep Networks for Monocular Depth Estimation(CVPR2017)
+10. Single View Stereo Matching
+
+### Project with code
+
+| Project                                                      | Paper                                                        | Framework  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ---------- |
+| [3dr2n2: A unified approach for single and multi-view 3d object Reconstruction](https://github.com/chrischoy/3D-R2N2) | [ECCV 2016](https://arxiv.org/abs/1604.00449)                | Theano     |
+| [Learning a predictable and generative vector representation for objects](https://github.com/rohitgirdhar/GenerativePredictableVoxels) | [ECCV 2016](https://arxiv.org/abs/1603.08637)                | Caffe      |
+| [Learning a probabilistic latent space of object shapes via 3d generative-adversarial modeling](https://github.com/zck119/3dgan-release) | [NIPS 2016](http://3dgan.csail.mit.edu/papers/3dgan_nips.pdf) | Torch 7    |
+| [Perspective transformer nets: Learning single-view 3d object reconstruction without 3d supervision](https://github.com/xcyan/nips16_PTN) | [NIPS 2016](https://papers.nips.cc/paper/6206-perspective-transformer-nets-learning-single-view-3d-object-reconstruction-without-3d-supervision.pdf) | Torch 7    |
+| Deep disentangled representations for volumetric reconstruction | [ECCV 2016](https://arxiv.org/pdf/1610.03777.pdf)            |            |
+| [Multi-view 3D Models from Single Images with a Convolutional Network](https://github.com/lmb-freiburg/mv3d) | [ECCV 2016](https://lmb.informatik.uni-freiburg.de/Publications/2016/TDB16a/paper-mv3d.pdf) | Tensorflow |
+| [Single Image 3D Interpreter Network](https://github.com/jiajunwu/3dinn) | [ECCV 2016](http://3dinterpreter.csail.mit.edu/papers/3dinn_eccv.pdf) | Torch 7    |
+| [Weakly-Supervised Generative Adversarial Networks for 3D Reconstruction](https://github.com/jgwak/McRecon) | [3DV 2017](https://arxiv.org/pdf/1705.10904.pdf)             | Theano     |
+| [Hierarchical Surface Prediction for 3D Object Reconstruction](https://github.com/chaene/hsp) | [3DV 2017](https://arxiv.org/pdf/1704.00710.pdf)             | Torch 7    |
+| [Octree generating networks: Efficient convolutional architectures for high-resolution 3d outputs](https://github.com/lmb-freiburg/ogn) | [ICCV 2017](https://arxiv.org/pdf/1703.09438.pdf)            | Caffe      |
+| [Multi-view Supervision for Single-view Reconstruction via Differentiable Ray Consistency](https://github.com/shubhtuls/drc) | [CVPR 2017](https://arxiv.org/pdf/1704.06254.pdf)            | Torch 7    |
+| [SurfNet: Generating 3D shape surfaces using deep residual networks](https://github.com/sinhayan/surfnet) | [CVPR 2017](http://openaccess.thecvf.com/content_cvpr_2017/papers/Sinha_SurfNet_Generating_3D_CVPR_2017_paper.pdf) | Matlab     |
+| [A Point Set Generation Network for 3D Object Reconstruction from a Single Image](https://github.com/fanhqme/PointSetGeneration) | [CVPR 2017](http://openaccess.thecvf.com/content_cvpr_2017/papers/Fan_A_Point_Set_CVPR_2017_paper.pdf) | Tensorflow |
+| [O-CNN: Octree-based Convolutional Neural Networks for 3D Shape Analysis](https://github.com/Microsoft/O-CNN) | [SIGGRAPH 2017](https://wang-ps.github.io/O-CNN_files/CNN3D.pdf) | Caffe      |
+| Rethinking Reprojection: Closing the Loop for Pose-aware Shape Reconstruction from a Single Image | [ICCV 2017](https://jerrypiglet.github.io/pdf/ICCV2017.pdf)  |            |
+| Scaling CNNs for High Resolution Volumetric Reconstruction From a Single Image | [ICCV 2017](http://openaccess.thecvf.com/content_ICCV_2017_workshops/papers/w17/Johnston_Scaling_CNNs_for_ICCV_2017_paper.pdf) |            |
+| Large-Scale 3D Shape Reconstruction and Segmentation from ShapeNet Core55 | [ICCV 2017](https://arxiv.org/pdf/1710.06104.pdf)            |            |
+| [Learning a Hierarchical Latent-Variable Model of 3D Shapes](https://github.com/lorenmt/vsl) | [3DV 2018](https://arxiv.org/pdf/1705.05994.pdf)             | Tensorflow |
+| [Learning Efficient Point Cloud Generation for Dense 3D Object Reconstruction](https://github.com/ericlin79119/3D-point-cloud-generation) | [AAAI 2018](https://chenhsuanlin.bitbucket.io/3D-point-cloud-generation/paper.pdf) | Tensorflow |
+| [DeformNet: Free-Form Deformation Network for 3D Shape Reconstruction from a Single Image](https://github.com/jackd/template_ffd) | [ACCV 2018](https://jhonykaesemodel.com/papers/learning_ffd_accv2018-camera_ready.pdf) | Tensorflow |
+| [Image2Mesh: A Learning Framework for Single Image 3DReconstruction](https://github.com/jhonykaesemodel/image2mesh) | [ACCV 2018](https://arxiv.org/pdf/1711.10669.pdf)            | Pytorch    |
+| [Neural 3D Mesh Renderer](https://github.com/hiroharu-kato/mesh_reconstruction) | [CVPR 2018](https://arxiv.org/pdf/1711.07566.pdf)            | Chainer    |
+| [Multi-view Consistency as Supervisory Signal for Learning Shape and Pose Prediction](https://github.com/shubhtuls/mvcSnP) | [CVPR 2018](https://arxiv.org/pdf/1801.03910.pdf)            | Torch 7    |
+| [Matryoshka Networks: Predicting 3D Geometry via Nested Shape Layers](https://bitbucket.org/visinf/projects-2018-matryoshka) | [CVPR 2018](https://arxiv.org/pdf/1804.10975.pdf)            | Pytorch    |
+| [AtlasNet: A Papier-Mâché Approach to Learning 3D Surface Generation](https://github.com/ThibaultGROUEIX/AtlasNet) | [CVPR 2018](https://arxiv.org/pdf/1802.05384.pdf)            | Pytorch    |
+| [Pixel2Mesh: Generating 3D Mesh Models from Single RGB Images](https://github.com/nywang16/Pixel2Mesh) | [ECCV 2018](http://openaccess.thecvf.com/content_ECCV_2018/papers/Nanyang_Wang_Pixel2Mesh_Generating_3D_ECCV_2018_paper.pdf) | Tensorflow |
+| [Multiresolution Tree Networks for 3D Point Cloud Processing](https://github.com/matheusgadelha/MRTNet) | [ECCV 2018](https://arxiv.org/pdf/1807.03520.pdf)            | Pytorch    |
+| Adaptive O-CNN: A Patch-based Deep Representation of 3D Shapes | [SIGGRAPH Asia 2018](https://wang-ps.github.io/AO-CNN_files/AOCNN.pdf) |            |
+| [Learning Implicit Fields for Generative Shape Modeling](https://github.com/czq142857/implicit-decoder) | [CVPR 2019](https://arxiv.org/pdf/1812.02822.pdf)            | Tensorflow |
+| [Occupancy Networks: Learning 3D Reconstruction in Function Space](https://github.com/autonomousvision/occupancy_networks) | [CVPR 2019](https://arxiv.org/pdf/1812.03828.pdf)            | Pytorch    |
+| [DeepSDF: Learning Continuous Signed Distance Functions for Shape Representation](https://github.com/hassony2/shape_sdf) | [CVPR 2019](https://arxiv.org/pdf/1901.05103.pdf)            | Pytorch    |
 
 ## 结构光
 
-> 先扫描结构光
+> 结构光投影三维成像目前是机器人3D 视觉感知的主要方式,结构光成像系统是由若干个投影仪和
+> 相机组成, 常用的结构形式有: 单投影仪-单相机、单投影仪-双相机 、单投影仪-多相机、单相机-双投影
+> 仪和单相机-多投影仪等典型结构形式.  
 >
-> 面阵结构光
+> 结构光投影三维成像的基本工作原理是：投影仪向目标物体投射特定的结构光照明图案,由相机摄取被目标调制后的图像,再通过图像处理和视觉模型求出目标物体的三维信息. 常用的投影仪主要有下列几种类型:液晶投影(LCD)、数字光调制投影(DLP)[如数字微镜器件 (DMD)]、激光 LED图案直接投影. 根据结构光投影次数划分,结构光投影三维成像可以分成单次投影3D和多次投影3D方法.
+>
+> 按照扫描方式又可分为：线扫描结构光、面阵结构光
 
 参考链接：[https://zhuanlan.zhihu.com/p/29971801](https://zhuanlan.zhihu.com/p/29971801)
+
+[结构光三维表面成像：综述（一）](https://www.baidu.com/link?url=nj4az5QbljqZTZwS4W1jGzfkYrN8iLk1YwB0RVI1_jR_axeOLDaraHgYFwsNcZ9h&wd=&eqid=e120080700017e0b000000055e5d1f70)
+
+[结构光三维表面成像：综述（二）](https://www.jianshu.com/p/b0e030f3a522)
+
+[结构光三维表面成像：综述（三）](https://www.jianshu.com/p/c8d0afd817cc)
+
+### 综述
+
+[Structured-light 3D surface imaging: a tutorial](https://link.zhihu.com/?target=http%3A//www.rtbasics.com/Downloads/IEEE_structured_light.pdf)
+
+[机器人视觉三维成像技术综述  ](http://www.opticsjournal.net/Articles/Abstract?aid=OJ9aea62c85c7ac99d)
+
+[Real-time structured light profilometry a review  ]()
+
+[A state of the art in structured light patterns for surface profilometry  ]()
+
+[Phase shifting algorithms for fringe projection profilometry: a review  ]()
+
+[Overview of the 3D profilometry of phase shifting fringe projection]()
+
+[Temporal phase unwrapping algorithms for fringe projection profilometry:a comparative review]()
+
+### Lectures&Video
+
+1. [**Build Your Own 3D Scanner: Optical Triangulation for Beginners**](https://link.zhihu.com/?target=http%3A//mesh.brown.edu/byo3d/)
+2. [https://github.com/nikolaseu/thesis](https://github.com/nikolaseu/thesis)
+3. [**CS6320 3D Computer Vision**, Spring 2015](http://www.sci.utah.edu/~gerig/CS6320-S2015/CS6320_3D_Computer_Vision.html)
+
+### 标定
+
+1. [高效线结构光视觉测量系统标定方法](http://www.opticsjournal.net/Articles/Abstract?aid=OJ590c414efec735a)
+2. [一种新的线结构光标定方法](http://www.opticsjournal.net/Articles/Abstract?aid=OJ6ca613096af02c49)
+3. [一种结构光三维成像系统的简易标定方法](http://www.opticsjournal.net/Articles/Abstract?aid=OJ8214561beb0d211d)
+4. [基于单应性矩阵的线结构光系统简易标定方法](http://www.opticsjournal.net/Articles/Abstract?aid=OJ200109000160x5A8D0)
+5. [线结构光标定方法综述](http://www.opticsjournal.net/Articles/Abstract?aid=OJ180307000127TqWtZv)
+6. [三线结构光视觉传感器现场标定方法](http://www.opticsjournal.net/Articles/Abstract?aid=OJ180908000212OkRnTq)
+7. [单摄像机单投影仪结构光三维测量系统标定方法](http://www.opticsjournal.net/Articles/Abstract?aid=OJ180808000091UrXu1w)
+8. [超大尺度线结构光传感器内外参数同时标定](http://www.opticsjournal.net/Articles/Abstract?aid=OJ180319000030HdJgMj)
+9. [单摄像机单投影仪结构光三维测量系统标定方法](http://www.opticsjournal.net/Articles/Abstract?aid=OJ180808000039aHdKgM)
+10. [三维空间中线结构光与相机快速标定方法](http://www.opticsjournal.net/Articles/Abstract?aid=OJ170329000177sZv2y5)
+11. [线结构光传感系统的快速标定方法](http://www.opticsjournal.net/Articles/Abstract?aid=OJ091028000118B8DaGd)
+
+
+
+### 单次投影成像
+
+> 单次投影结构光主要采用空间复用编码和频率复用编码形式实现 ,常用的编码形式有:彩色编码 、灰度索引、 几何形状编码和随机斑点. 目前在机器人手眼系统应用中,对于三维测量精度要求不高的场合,如码垛、拆垛、三维抓取等,比较受欢迎的是投射伪随机斑点获得目标三维信息 。
+
+1. One-shot pattern projection for dense and accurate 3D acquisition in structured light
+
+2. A single-shot structured light means by encoding both color and geometrical features  
+
+3. Dynamic 3D surface profilometry using a novel colour pattern encoded with a multiple triangular mode  
+
+4. Review of single-shot 3D shape measurement by phase calculation-based fringe projection techniques
+
+5. Robust pattern decoding in shape-coded structured light
+
+   
+
+### 多次投影成像  
+
+> 多次投影3D方法主要采用时间复用编码方式实现,常用的图案编码形式有:二进制编码、多频相移编码和混合编码法(如格雷码＋相移条纹)等.
+>
+> 但是格雷码方法仅能在投射空间内进行离散的划分,空间分辨率受到成像器件的限制. 为了提高空间分辨率,需要增加投影条纹幅数,投射条纹宽度更小的格雷码条纹图,但条纹宽度过小会导致格雷码条纹的边缘效应,从而引
+> 起解码误差. 
+>
+> 正弦光栅条纹投影克服了格雷码空间离散划分的缺点,成为使用率最高的结构光类型之一. 众所周知,对于复杂外形,如有空洞、阶梯、遮挡等,采用正弦单频相移法条纹投影时,存在相位解包裹难题.另外为了能够从系列条纹图中求出相位绝对值,需要在条纹中插入特征点,比如一个点、一条线作为参考相位点,但是这些点或线特征标志有可能投影在物体的遮挡或阴影区域,或受到环境光等干扰等,发生丢失,影响测量结果的准确性. 因此,对于复杂轮廓的物体,常采用多频相移技术.   
+
+1. 三维重建的格雷码-相移光编码技术研究
+2. Pattern codification strategies in structured light systems  
+3. Binary coded linear fringes for three-dimensional shape profiling
+4. 3D shape measurement based on complementary Gray-code light
+5. Phase shifting algorithms for fringe projection profilometry: a review  
+6. Overview of the 3D profilometry of phase shifting fringe projection
+7. Temporal phase unwrapping algorithms for fringe projection profilometry:a comparative review
+8. A multi-frequency  inverse-phase error compensation method for projectornon linear in3D shape measurement
+
+### 偏折法成像  
+
+> 对于粗糙表面,结构光可以直接投射到物体表面进行视觉成像测量;但对于大反射率光滑表面和镜面物体3D 测量,结构光投影不能直接投射到被测表面,3D测量还需要借助镜面偏折技术 .
+
+1. Principles of shape from specular reflection  
+2. Deflectometry: 3D-metrology from nanometer to meter  
+3. Three-dimensional shape measurement of a highly reflected specular surface with structured light
+   method
+4. Three-dimensional shape measurements of specular objects using phase-measuring deflectometry  
+
+> 由于单次投影曝光和测量时间短,抗振动性能好,适合运动物体的3D测量,如机器人实时运动引导,手眼机器人对生产线上连续运动产品进行抓取等操作. 但深度垂直方向上的空间分辨率受到目标视场、镜头倍率和相机像素等因素的影响,大视场情况下不容易提升.
+>
+> 多次投影方法(如多频条纹方法)具有较高空间分辨率,能有效地解决表面斜率阶跃变化和空洞等难题. 不足之处在于:① 对于连续相移投影方法,3D重构的精度容易受到投影仪、相机的非线性和环境变化的影响;②抗振动性能差,不合适测量连续运动的物体;③在 Eye-in-Hand视觉导引系统中,机械臂不易在连续运动时进行3D成像和引导;④实时性差,不过随着投影仪投射频率和 CCD/CMOS图像传感器采集速度的提高,多次投影方法实时3D
+> 成像的性能也在逐步改进.
+>
+> 偏折法对于复杂面型的测量,通常需要借助多次投影方法,因此具有多次投影方法相同的缺点.另外偏折法对曲率变化大的表面测量有一定的难度,因为条纹偏折后的反射角的变化率是被测表面曲率变化率的２倍,因此对被测物体表面的曲率变化比较敏感,很容易产生遮挡难题.  
+
+### Other Papers
+
+2. 基于面结构光的三维重建阴影补偿算法
+3. [Enhanced phase measurement profilometry for industrial 3D inspection automation](https://www.researchgate.net/publication/273481900_Enhanced_phase_measurement_profilometry_for_industrial_3D_inspection_automation)
+4. [Profilometry of three-dimensional discontinuous solids by combining two-steps temporal phase unwrapping, co-phased profilometry and phase-shifting interferometry](http://xueshu.baidu.com/usercenter/paper/show?paperid=3056d2277236112a708e4746a73e1e1d&site=xueshu_se)
+5. [360-Degree Profilometry of Discontinuous Solids Co-Phasing ２-Projectors and１-Camera  ]()
+6. [Coherent digital demodulation of single-camera N-projections for 3D-object shape measurement Co-phased profilometr  ]()
+7. [High-speed 3D image acquisition using coded structured light projection](https://www.researchgate.net/publication/224296439_High-speed_3D_image_acquisition_using_coded_structured_light_projection)
+8. [Accurate 3D measurement using a Structured Light System](https://www.researchgate.net/publication/222500455_Accurate_3D_measurement_using_a_Structured_Light_System)
+9. [Structured light stereoscopic imaging with dynamic pseudo-random patterns  ](https://static.aminer.org/pdf/PDF/000/311/975/a_high_precision_d_object_reconstruction_method_using_a_color.pdf)
+10. [Robust one-shot 3D scanning using loopy belief propagation  ](https://www.researchgate.net/publication/224165371_Robust_one-shot_3D_scanning_using_loopy_belief_propagation)
+11. [Robust Segmentation and Decoding of a Grid Pattern for Structured Light](https://www.semanticscholar.org/paper/Robust-Segmentation-and-Decoding-of-a-Grid-Pattern-Pag%C3%A8s-Salvi/dcbdd608dcdf03b0d0eba662c68915dcfa90e5a5)
+12. [Rapid shape acquisition using color structured light and multi-pass dynamic programming  ](http://ieeexplore.ieee.org/iel5/7966/22019/01024035.pdf?arnumber=1024035)
+13. [Improved stripe matching for colour encoded structured light  ]()
+14. [Absolute phase mapping for one-shot dense pattern projection  ](https://www.researchgate.net/profile/Joaquim_Salvi/publication/224165341_Absolute_phase_mapping_for_one-shot_dense_pattern_projection/links/56ffaee708ae650a64f805dd.pdf)
+15. [3D digital stereophotogrammetry: a practical guide to facial image acquisition  ]()
+16. [Method and apparatus for 3D imaging using light pattern having multiple sub-patterns  ]()
+17. [High speed laser three-dimensional imager  ]()
+18. [Three-dimensional dental imaging method and apparatus having a reflective member  ]()
+19. [3D surface profile imaging method and apparatus using single spectral light condition  ]()
+20. [Three-dimensional surface profile imaging method and apparatus using single spectral light condition]()
+21. [High speed three dimensional imaging method  ]()
+22. [A hand-held photometric stereo camera for 3-D modeling  ]()
+23. [High-resolution, real-time 3D absolute coordinate measurement based on a phase-shifting method  ]()
+24. [A fast three-step phase shifting algorithm  ]()
 
 ### Code
 
@@ -304,38 +750,58 @@
 3. [https://github.com/nikolaseu/neuvision](https://github.com/nikolaseu/neuvision)
 4. [https://github.com/pranavkantgaur/3dscan](https://github.com/pranavkantgaur/3dscan)
 
-### Lectures
+## 扫描3D成像  
 
-1. [**Build Your Own 3D Scanner: Optical Triangulation for Beginners**](https://link.zhihu.com/?target=http%3A//mesh.brown.edu/byo3d/)
-2. [https://github.com/nikolaseu/thesis](https://github.com/nikolaseu/thesis)
+> 扫描3D成像方法可分为扫描测距、主动三角法、色散共焦法等。扫描3D成像的最大优点是测量精度高,其中
+> 色散共焦法还有其他方法难以比拟的优点,即非常适合测量透明物体、高反与光滑表面的物体. 但缺点是速度慢、效率低;当用于机械手臂末端时,可实现高精度3D测量,但不适合机械手臂实时3D引导与定位,因此应用场合有限;另外主动三角扫描在测量复杂结构形貌时容易产生遮挡,需要通过合理规划末端路径与姿态来解决.
 
-### Video
+#### 扫描测距  
 
-1. [**CS6320 3D Computer Vision**, Spring 2015](http://www.sci.utah.edu/~gerig/CS6320-S2015/CS6320_3D_Computer_Vision.html)
+> 扫描测距是利用一条准直光束通过一维测距扫描整个目标表面实现3D测量，主要包括：单点飞行时间法、激光散射干涉法、 共焦法。
+>
+> 单点测距扫描3D方法中,单点飞行时间法适合远距离扫描,测量精度较低,一般在毫米量级. 其他几种单点扫描方法有:单点激光干涉法、共焦法和单点激光主动三角法,测量精度较高,但前者对环境要求高;线扫描精度适中,效率高. 比较适合于机械手臂末端执行3D测量的应是主动激光三角法和色散共焦法.  
 
-### Papers
+##### Paper
 
-1. [Structured-light 3D surface imaging: a tutorial](https://link.zhihu.com/?target=http%3A//www.rtbasics.com/Downloads/IEEE_structured_light.pdf)
-2. [High-speed 3D image acquisition using coded structured light projection](https://www.researchgate.net/publication/224296439_High-speed_3D_image_acquisition_using_coded_structured_light_projection)
-3. [Accurate 3D measurement using a Structured Light System](https://www.researchgate.net/publication/222500455_Accurate_3D_measurement_using_a_Structured_Light_System)
-4. [Structured light stereoscopic imaging with dynamic pseudo-random patterns  ](https://static.aminer.org/pdf/PDF/000/311/975/a_high_precision_d_object_reconstruction_method_using_a_color.pdf)
-5. [Robust one-shot 3D scanning using loopy belief propagation  ](https://www.researchgate.net/publication/224165371_Robust_one-shot_3D_scanning_using_loopy_belief_propagation)
-6. [Robust Segmentation and Decoding of a Grid Pattern for Structured Light](https://www.semanticscholar.org/paper/Robust-Segmentation-and-Decoding-of-a-Grid-Pattern-Pag%C3%A8s-Salvi/dcbdd608dcdf03b0d0eba662c68915dcfa90e5a5)
-7. [Rapid shape acquisition using color structured light and multi-pass dynamic programming  ](http://ieeexplore.ieee.org/iel5/7966/22019/01024035.pdf?arnumber=1024035)
-8. [Improved stripe matching for colour encoded structured light  ]()
-9. [Absolute phase mapping for one-shot dense pattern projection  ](https://www.researchgate.net/profile/Joaquim_Salvi/publication/224165341_Absolute_phase_mapping_for_one-shot_dense_pattern_projection/links/56ffaee708ae650a64f805dd.pdf)
-10. [3D digital stereophotogrammetry: a practical guide to facial image acquisition  ]()
-11. [Method and apparatus for 3D imaging using light pattern having multiple sub-patterns  ]()
-12. [High speed laser three-dimensional imager  ]()
-13. [Three-dimensional dental imaging method and apparatus having a reflective member  ]()
-14. [3D surface profile imaging method and apparatus using single spectral light condition  ]()
-15. [Three-dimensional surface profile imaging method and apparatus using single spectral light condition]()
-16. [High speed three dimensional imaging method  ]()
-17. [A hand-held photometric stereo camera for 3-D modeling  ]()
-18. [High-resolution, real-time 3D absolute coordinate measurement based on a phase-shifting method  ]()
-19. [A fast three-step phase shifting algorithm  ]()
+1. Active optical range imaging sensor  
+2. Active and passive range sensing for robotics  
 
-## 立体视觉
+#### 主动三角法
+
+> 主动三角法是基于三角测量原理,利用准直光束、一条或多条平面光束扫描目标表面完成3D测量的. 光束常采用以下方式获得:激光准直、圆柱或二次曲面柱形棱角扩束,非相干光(如白光、LED 光源)通过小孔、狭缝(光栅)投影或相干光衍射等.  主动三角法可分为三种类型:单点扫描、单线扫描和多线扫描 
+
+##### Paper
+
+1. Review of different 3D scanners and scanning techniques  
+2. 3D metrology using a collaborative robot with a laser triangulation sensor  
+3. Introductory review on Flying Triangulation a motion-robust optical 3D measurement principle
+4. Flying triangulation an optical 3D sensor for the motion-robust acquisition of complex object
+5. Hand-Guided 3D Surface Acquisition by Combining Simple Light Sectioning with Real-Time Algorithms  
+
+#### 色彩共焦法  
+
+> 色散共焦似乎可以扫描测量粗糙和光滑的不透明和透明物体,如反射镜面、透明玻璃面等,目前在手机盖板三维检测等领域广受欢迎。色散共焦扫描有三种类型:单点一维绝对测距扫描、多点阵列扫描和连续线扫描。
+
+
+
+##### Paper
+
+1. Spectral characteristics of chromatic confocal imaging systems  
+2. Spectrally multiplexed chromatic confocal multipoint sensing  
+3. Chromatic confocal matrix sensor with actuated pinhole arrays  
+4. Multiplex acquisition approach for high speed 3d measurements with a chromatic confocal
+   microscope
+5. Fast 3D in line-sensor for specular and diffuse surfaces combining the chromatic confocal and triangulation principle
+6. Single-shot depth-section imaging through chromatic slit-scan confocal microscopy
+7. Three-dimensional surface profile measurement using a beam scanning chromatic confocal microscope
+8. 
+
+## 立体视觉3D成像
+
+> 立体视觉字面意思是用一只眼睛或两只眼睛感知三维结构,一般情况下是指从不同的视点获取两
+> 幅或多幅图像重构目标物体3D结构或深度信息. 深度感知视觉线索可分为 Monocular cues
+> 和 Binocular cues(双目视差). 目前立体视觉3D 可以通过单目视觉、双目视觉、多 (目) 视觉、光场3D
+> 成像(电子复眼或阵列相机)实现.  
 
 ### 书籍
 
@@ -354,8 +820,50 @@
 ### 综述
 
 1. [Review of Stereo Vision Algorithms: From Software to Hardware  ]()
+2. [双目立体视觉的研究现状及进展](http://www.opticsjournal.net/Articles/Abstract?aid=OJ180915000179tZw3z6)
 
-### 立体匹配
+### 单目视觉成像
+
+> 单目视觉深度感知线索通常有:透视、焦距差异 、多视觉成像、覆盖、阴影 、运动视差等.   
+
+1. Depth map extracting based on geometric perspective an applicable２D to３D conversion technology  
+2. Focus cues affect perceived depth 
+3. 3D image acquisition system based on shape from focus technique
+4. Multi-view stereo: a tutorial
+5. 3D reconstruction from multiple images part1 principles  
+6. Three-dimensional reconstruction of hybrid surfaces using perspective shape from shading  
+7. Numerical methods for shape-from-shading a new survey with benchmarks  
+8. The neural basis of depth perception from motion parallax
+9. Motion parallax in stereo 3D
+10. 3D image sensor based on parallax motion  
+
+### 双目视觉
+
+> 在机器视觉里利用两个相机从两个视点对同一个目标场景获取两个视点图像,再计算两个视点图像中同名点的视差获得目标场景的3D深度信息. 典型的双目立体视觉计算过程包含下面四个步骤:图像畸变矫正、立体图像对校正、图像配准和三角法重投影视差图计算.
+>
+> **双目视觉的难点：**
+>
+> 1、光照敏感，被动光
+>
+> 2、双目视觉系统估计视差没那么容易，**立体匹配**是计算机视觉典型的难题，基线宽得到远目标测距准，而基线短得到近目标测距结果好。谈到双目系统的难点，除了立体匹配，还有标定。标定后的系统会出现“漂移”的，所以在线标定是必须具有的。
+
+#### 综述
+
+1. [双目立体视觉匹配技术综述](http://d.wanfangdata.com.cn/Periodical/cqgxyxb201502014)
+
+#### 视差和深度计算
+
+1. Real-time depth computation using stereo imaging  
+2. Binocular disparity and the perception of depth  
+3. Fast Stereo Disparity Maps Refinement By Fusion of Data-Based And Model-Based Estimations  
+
+#### 立体匹配
+
+> 匹配方法分两种，全局法和局部法，实用的基本是局部法，因为全局法太慢。
+>
+> （一）基于全局约束的立体匹配算法：在本质上属于优化算法，它是将立体匹配问题转化为寻找全局能量函数的最优化问题，其代表算法主要有图割算法、置信度传播算法和协同优化算法等．全局算法能够获得较低的总误匹配率，但算法复杂度较高,很难满足实时的需求，不利于在实际工程中使用，常见的算法有DP、BP  等。
+>
+> （二）基于局部约束的立体匹配算法：主要是利用匹配点周围的局部信息进行计算，由于其涉及到的信息量较少，匹配时间较短，因此受到了广泛关注，其代表算法主要有 SAD、SSD、ZSAD、NCC等。
 
 1. [DeepPruner: Learning Efficient Stereo Matching via Differentiable PatchMatch](http://www.researchgate.net/publication/335788330_DeepPruner_Learning_Efficient_Stereo_Matching_via_Differentiable_PatchMatch)
 2. [Improved Stereo Matching with Constant Highway Networks and Reflective Confidence Learning](http://www.researchgate.net/publication/320966979_Improved_Stereo_Matching_with_Constant_Highway_Networks_and_Reflective_Confidence_Learning)
@@ -383,10 +891,41 @@
 24. [Adaptive support-weight approach for correspondence search]()
 25. [Segment-based stereo matching using belief propagation and a self-adapting dissimilarity measure]()
 
+### 多目视觉
 
+> 多(目)视觉成像,也称多视点立体成像,用单个或多个相机从多个视点获取同一个目标场景的多幅图像,重构目标场景的三维信息.   
+
+1. Adaptive structure from motion with a contrario model estimation  
+2. A comparison and evaluation of multi-view stereo reconstruction algorithms  
+3. Multiple view geometry in computer vision  
+
+### 光场成像
+
+> 光场3D成像的原理与传统 CCD和 CMOS相机成像原理在结构原理上有所差异,传统相机成像是光线穿过镜头在后续的成像平面上直接成像,一般是2D图像;光场相机成像是在传感器平面前增加了一个微透镜阵列,将经过主镜头入射的光线再次穿过每个微透镜,由感光阵列接收,从而获得光线的方向与位置信息,使成像结果可在后期处理,达到先拍照,后聚焦的效果.
+>
+> 光场相机的优点是:单个相机可以进行3D成像,横向和深度方向的空间分辨率可以达到20μm到 mm 量级,景深比普通相机大好几倍,比较适合Eye-in-Hand系统3D测量与引导,但目前精度适中的商业化光场相机价格昂贵.
+
+1. Light field imaging models calibrations reconstructions and applications  
+2. Extracting depth information from stereo vision system using a correlation and a feature based methods  
+3. 基于微透镜阵列型光场相机的多目标快速测距方法
+4. 基于光场相机的四维光场图像水印及质量评价
+5. 基于光场相机的深度面光场计算重构
+6. 光场相机视觉测量误差分析
+7. 一种基于光场图像的聚焦光场相机标定方法
+8. 光场相机成像模型及参数标定方法综述
+9. 
 
 ## SFM
 
+> Structure from Motion（SfM）是一个估计相机参数及三维点位置的问题。一个基本的**SfM pipeline**可以描述为:对每张2维图片检测特征点（feature point），对每对图片中的特征点进行匹配，只保留满足几何约束的匹配，最后执行一个迭代式的、鲁棒的SfM方法来恢复摄像机的内参（intrinsic parameter）和外参(extrinsic parameter)。并由三角化得到三维点坐标，然后使用Bundle Adjustment进行优化。
+>
+> SFM（Structure From Motion），主要基于多视觉几何原理，用于从运动中实现3D重建，也就是从无时间序列的2D图像中推算三维信息，是计算机视觉学科的重要分支。
+>
+> 使用同一相机在其内参数不变的条件下,从不同视点获取多幅图像,重构目标场景的三维信息. 该技术常用
+> 于跟踪目标场景中大量的控制点,连续恢复场景3D结构信息、相机的姿态和位置.  
+>
+> SfM方法可以分为增量式（incremental/sequential SfM）,全局式（global SfM），混合式（hybrid SfM）,层次式（hierarchica SfM）。另外有基于语义的SfM(Semantic SfM)和基于Deep learning的SfM。
+>
 > Incremental SfM
 >
 > Global SfM
@@ -397,6 +936,10 @@
 >
 > Non Rigid SfM
 
+### 参考
+
+[基于单目视觉的三维重建算法综述](https://zhuanlan.zhihu.com/p/55712813)
+
 #### Turtorial
 
 1. [Open Source Structure-from-Motion](https://blog.kitware.com/open-source-structure-from-motion-at-cvpr-2015/). M. Leotta, S. Agarwal, F. Dellaert, P. Moulon, V. Rabaud. CVPR 2015 Tutorial [(material)](https://github.com/mleotta/cvpr2015-opensfm).
@@ -404,11 +947,31 @@
 
 #### Incremental SfM
 
+> 增量式SfM首先使用SIFT特征检测器提取特征点并计算特征点对应的描述子（descriptor），然后使用ANN（approximate nearest neighbor）方法进行匹配，低于某个匹配数阈值的匹配对将会被移除。对于保留下来的匹配对，使用RANSAC和八点法来估计基本矩阵（fundamental matrix），在估计基本矩阵时被判定为外点（outlier）的匹配被看作是错误的匹配而被移除。对于满足以上几何约束的匹配对，将被合并为tracks。然后通过incremental方式的SfM方法来恢复场景结构。首先需要选择一对好的初始匹配对，一对好的初始匹配对应该满足：
+>
+> （1）足够多的匹配点；
+>
+> （2）宽基线。之后增量式地增加摄像机，估计摄像机的内外参并由三角化得到三维点坐标，然后使用Bundle Adjustment进行优化。
+>
+> 增量式SfM从无序图像集合计算三维重建的常用方法，增量式SfM可分为如图 3所示几个阶段：图像特征提取、特征匹配、几何约束、重建初始化、图像注册、三角化、outlier过滤、Bundle adjustment等步骤。
+>
+> 增量式SfM优势：系统对于特征匹配以及外极几何关系的外点比较鲁棒，重讲场景精度高；标定过程中通过RANSAC不断过滤外点；捆绑调整不断地优化场景结构。
+>
+> 增量式SfM缺点：对初始图像对选择及摄像机的添加顺序敏感；场景漂移，大场景重建时的累计误差。效率不足，反复的捆绑调整需要大量的计算时间。
+>
+> 实现增量式SfM框架的包含COLMAP、openMVG、Theia等
+
 1. [Photo Tourism: Exploring Photo Collections in 3D](http://phototour.cs.washington.edu/Photo_Tourism.pdf). N. Snavely, S. M. Seitz, and R. Szeliski. SIGGRAPH 2006.
 2. [Towards linear-time incremental structure from motion](http://ccwu.me/vsfm/vsfm.pdf). C. Wu. 3DV 2013.
 3. [Structure-from-Motion Revisited](https://demuc.de/papers/schoenberger2016sfm.pdf). Schöenberger, Frahm. CVPR 2016.
 
 #### Global SfM
+
+> 全局式：估计所有摄像机的旋转矩阵和位置并三角化初始场景点。
+>
+> 优势：将误差均匀分布在外极几何图上，没有累计误差。不需要考虑初始图像和图像添加顺序的问题。仅执行一次捆绑调整，重建效率高。
+>
+> 缺点：鲁棒性不足，旋转矩阵求解时L1范数对外点相对鲁棒，而摄像机位置求解时相对平移关系对匹配外点比较敏感。场景完整性，过滤外极几何边，可能丢失部分图像。
 
 1. [Combining two-view constraints for motion estimation](http://www.umiacs.umd.edu/users/venu/cvpr01.pdf) V. M. Govindu. CVPR, 2001.
 2. [Lie-algebraic averaging for globally consistent motion estimation](http://www.umiacs.umd.edu/users/venu/cvpr04final.pdf). V. M. Govindu. CVPR, 2004.
@@ -419,6 +982,16 @@
 7. [A Global Linear Method for Camera Pose Registration](http://www.cs.sfu.ca/~pingtan/Papers/iccv13_sfm.pdf). N. Jiang, Z. Cui, P. Tan. ICCV 2013.
 8. [Global Structure-from-Motion by Similarity Averaging](http://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Cui_Global_Structure-From-Motion_by_ICCV_2015_paper.pdf). Z. Cui, P. Tan. ICCV 2015.
 9. [Linear Global Translation Estimation from Feature Tracks](http://arxiv.org/abs/1503.01832) Z. Cui, N. Jiang, C. Tang, P. Tan, BMVC 2015.
+
+#### 混合式
+
+> 混合式SfM[5]在一定程度上综合了incremental SfM和global SfM各自的优点。HSfM的整个pipeline可以概括为全局估计摄像机旋转矩阵，增量估计摄像机位置，三角化初始场景点。
+>
+> 用全局的方式提出一种基于社区的旋转误差平均法，该方法既考虑了对极几何的精度又考虑了成对几何的精度。基于已经估计的相机的绝对旋转姿态，用一种增量的方式估计相机光心位置。对每个添加的相机，其旋转和内参保持不变，同时使用改进的BA细化光心和场景结构。
+>
+> 层次式SfM同样借鉴incremental SfM和global SfM各自优势，但是基于分段式的incremental SfM和全局式SfM，没有像混合式SfM分成两个阶段进行。
+>
+> SfM中我们用来做重建的点是由特征匹配提供的，所以SfM获得特征点的方式决定了它不可能直接生成密集点云。而MVS则几乎对照片中的每个像素点都进行匹配，几乎重建每一个像素点的三维坐标，这样得到的点的密集程度可以较接近图像为我们展示出的清晰度。
 
 #### Hierarchical SfM
 
@@ -452,6 +1025,24 @@
 
 ## TOF
 
+> 飞行时间 (TOF) 相机每个像素利用光飞行的时间差来获取物体的深度。TOF成像可用于大视野、远距离、低精度、低成本的3D图像采集. 其特点是:检测速度快、视野范围较大、工作距离远、价格便宜,但精度低,易受环境
+> 光的干扰 。
+
+#### 分类
+
+##### 直接TOF
+
+> D-TOF通常用于单点测距系统, 为了实现面积范围3D成像,通常需要采用扫描技术 。 
+
+
+
+##### 间接TOF
+
+> 间接 TOF(I-TOF),时间往返行程是从光强度的时间选通测量中间接外推获得 ，I-TOF不需要精确的
+> 计时,而是采用时间选通光子计数器或电荷积分器,它们可以在像素级实现.  
+
+
+
 #### 教程
 
 1. [ToF技术是什么？和结构光技术又有何区别?](https://zhuanlan.zhihu.com/p/51218791)
@@ -463,7 +1054,7 @@
 
 ## Multi-view Stereo
 
-> 多视角立体视觉（Multiple View Stereo，MVS）是对立体视觉的推广，能够在多个视角（从外向里）观察和获取景物的图像，并以此完成匹配和深度估计。某种意义上讲，SLAM/SFM其实和MVS是类似的，只是前者是摄像头运动，后者是多个摄像头视角。也可以说，前者可以在环境里面“穿行”，而后者更像在环境外“旁观”。
+> 多视角立体视觉（Multiple View Stereo，MVS）是对立体视觉的推广，能够在多个视角（从外向里）观察和获取景物的图像，并以此完成匹配和深度估计。某种意义上讲，SLAM/SFM其实和MVS是类似的，只是前者是摄像头运动，后者是多个摄像头视角（**可以是单相机的多个视角图像，也可以是多相机的多视角图像**）。也可以说，前者可以在环境里面“穿行”，而后者更像在环境外“旁观”。
 >
 > 多视角立体视觉的pipelines如下：
 >
@@ -583,6 +1174,32 @@
 | [PMVS](https://github.com/pmoulon/CMVS-PMVS)                 | C++ CUDA             | GNU General Public License - contamination                   |
 | [SMVS Shading-aware Multi-view Stereo](https://github.com/flanggut/smvs) | C++                  | BSD-3-Clause license                                         |
 
+## 深度相机三维重建
+
+> 主要是基于Kinect这类深度相机进行三维重建，包括KinectFusion、Kintinuous，ElasticFusion、InfiniTAM，BundleFusion
+
+## 基于线条/面的三维重建
+
+1. Surface Reconstruction from 3D Line Segments
+
+## Planar Reconstruction
+
+> 参考：https://github.com/BigTeacher-777/Awesome-Planar-Reconstruction
+
+### Papers
+
+-  **[PlaneRCNN]** PlaneRCNN: 3D Plane Detection and Reconstruction from a Single Image [[CVPR2019(Oral)](https://arxiv.org/pdf/1812.04072.pdf)][[Pytorch](https://github.com/NVlabs/planercnn)]
+-  **[PlanarReconstruction]** Single-Image Piece-wise Planar 3D Reconstruction via Associative Embedding [[CVPR2019](https://arxiv.org/pdf/1902.09777.pdf)][[Pytorch](https://github.com/svip-lab/PlanarReconstruction)]
+-  **[Planerecover]** Recovering 3D Planes from a Single Image via Convolutional Neural Networks [[ECCV2018](https://faculty.ist.psu.edu/zzhou/paper/ECCV18-plane.pdf)][[Tensorflow](https://github.com/fuy34/planerecover)]
+-  **[PlaneNet]** PlaneNet: Piece-wise Planar Reconstruction from a Single RGB Image [[CVPR2018](https://arxiv.org/pdf/1804.06278.pdf)][[Tensorflow](https://github.com/art-programmer/PlaneNet)]
+
+### Datasets
+
+-  ScanNet Dataset (PlaneNet) [[Train](https://drive.google.com/file/d/1NyDrgI02ao18WmXyepgVkWGqtM3YS3_4/view)][[Test](https://drive.google.com/file/d/1kfd-kreGQQLSRNF66t447R9WgDqsTh-3/view)]
+-  ScanNet Dataset (PlaneRCNN)[[Link](https://www.dropbox.com/s/u2wl4ji700u4shq/ScanNet_planes.zip?dl=0)]
+-  NYU Depth Dataset [[Link](https://cs.nyu.edu/~silberman/datasets/nyu_depth_v2.html)]
+-  SYNTHIA Dataset [[Link](https://psu.app.box.com/s/6ds04a85xqf3ud3uljjxnedmux169ebf)]
+
 ## 3D人脸重建
 
 1、[Nonlinear 3D Face Morphable Model](https://arxiv.org/abs/1804.03786)
@@ -647,9 +1264,101 @@
 22. Single-Image Piece-wise Planar 3D Reconstruction via Associative Embedding (2019 CVPR) [[Paper\]](https://arxiv.org/pdf/1902.09777.pdf) [[Code\]](https://github.com/svip-lab/PlanarReconstruction)
 23. 3D Scene Reconstruction with Multi-layer Depth and Epipolar Transformers (ICCV 2019) [[Paper\]](https://research.dshin.org/iccv19/multi-layer-depth/)
 
+# 姿态估计
+
+> 主要基于RGB、RGB-D以及点云数据，估计物体和相机/基准坐标系的关系。
+>
+> 主要有整体方式、霍夫投票方式、Keypoint-based方式和Dense Correspondence方式
+
+## 实现方式不同
+
+### 整体方式
+
+> 整体方法直接估计给定图像中物体的三维位置和方向。经典的基于模板的方法构造刚性模板并扫描图像以计算最佳匹配姿态。这种手工制作的模板对集群场景不太可靠。最近，人们提出了一些基于深度神经网络的方法来直接回归相机或物体的6D姿态。然而，旋转空间的非线性使得数据驱动的DNN难以学习和推广。
+
+1. Discriminative mixture-of-templates for viewpoint classification  
+2. Gradient response maps for realtime detection of textureless objects.  
+3. Comparing images using the hausdorff distance  
+4. Densefusion: 6d object pose estimation by iterative dense fusion  
+5. Posecnn: A convolutional neural network for 6d object pose estimation in cluttered scenes.  
+6. Viewpoints and keypoints  
+7. Implicit 3d orientation learning for 6d object detection from rgb images.
+8. Render for cnn: Viewpoint estimation in images using cnns trained with rendered 3d model views.  
+
+### Keypoint-based方式
+
+> 目前基于关键点的方法首先检测图像中物体的二维关键点，然后利用PnP算法估计6D姿态
+
+1. Surf: Speeded up robust features.  
+2. Object recognition from local scaleinvariant features  
+3. 3d object modeling and recognition using local affine-invariant image descriptors and multi-view spatial constraints.  
+4. Stacked hourglass networks for human pose estimation  
+5. Making deep heatmaps robust to partial occlusions for 3d object pose estimation.   
+6. Bb8: A scalable, accurate, robust to partial occlusion method for predicting the 3d poses of challenging objects without using depth 
+7. Real-time seamless single shot 6d object pose prediction.  
+8. Discovery of latent 3d keypoints via end-toend geometric reasoning.  
+9. Pvnet: Pixel-wise voting network for 6dof pose estimation.  
+
+### Dense Correspondence and 霍夫投票方式
+
+1. independent object class detection using 3d feature maps.  
+2. Depthencoded hough voting for joint object detection and shape recovery.   
+3. aware object detection and pose estimation.  
+4. Learning 6d object pose estimation using 3d object coordinates.  
+5. Global hypothesis generation for 6d object pose estimation.  
+6. Deep learning of local rgb-d patches for 3d object detection and 6d pose estimation.   
+7. Cdpn: Coordinates-based disentangled pose network for real-time rgb-based 6-dof object
+   pose estimation.  
+8. Pix2pose: Pixel-wise coordinate regression of objects for 6d pose estimation.  
+9. Normalized object coordinate space for categorylevel 6d object pose and size estimation.  
+10. Recovering 6d object pose and predicting next-bestview in the crowd.
+11. 
+
+## 数据格式不同
+
+### 基于点云方式
+
+1. PointFusion
+2. Frustum PointNets
+3. VoteNet
+
+### 基于RGB方式
 
 
-# 深度图补全
+
+### 基于RGB-D方式
+
+
+
+# 无序抓取
+
+
+
+# 视觉伺服
+
+### 综述
+
+1. [Survey on Visual Servoing for Manipulation](http://xueshu.baidu.com/usercenter/paper/show?paperid=ec62933c2dc0edd1c24ba39d2e28d9f4&site=xueshu_se)
+2. [A review on vision-based control of robot manipulators  ]()
+
+### 基于图像（2D）
+
+1. [Kinematics-based incremental visual servo for robotic capture of non-cooperative target](https://www.baidu.com/link?url=bPpedLCJ7n1GR2u8fDlVnJZ0HZRL15k0OlRXzPjPYzpPzELq79znoqkbnO7CG9CDTh2fmC-C-wbgc1xjXfrjDacDBkiztLvViFj1FGnbfVIlu_ur8gAKyBPywPHgnxfxasqSKF5NapFdvaMSZ7Z4A6YKY2aqAY1DQf2LdXbyXPaIsbOov2PiBj7Twb73KrAIkCfcpu2ZvODrzVhG0RGM9K&wd=&eqid=f29332170003bec5000000055e59ff3f)
+2. [Position and attitude control of Eye-In-Hand System by visual servoing using Binocular Visual Space](http://xueshu.baidu.com/usercenter/paper/show?paperid=1788c32af8c3c191062de46f599fcf55&site=xueshu_se)
+3. [Progressive 3D Reconstruction of Unknown Objects using one Eye-in-Hand Camera]()
+4. 
+
+### 基于位置（3D）
+
+1. [A hybrid positioning method for eye-in-hand industrial robot by using 3D reconstruction and IBVS](http://xueshu.baidu.com/usercenter/paper/show?paperid=233c5ff9ae58ec24cc2d9572af577412&site=xueshu_se)
+
+### 基于图像和位置（2.5D）
+
+1.  [Moment-Based 2.5-D Visual Servoing for Textureless Planar Part Grasping](https://ieeexplore.ieee.org/document/8584462)
+
+# 深度图补全&修复
+
+### 深度图补全
 
 1、[HMS-Net: Hierarchical Multi-scale Sparsity-invariant Network for Sparse Depth Completion](https://arxiv.org/abs/1808.08685)
 
@@ -668,3 +1377,21 @@
 8、[PLIN: A Network for Pseudo-LiDAR Point Cloud Interpolation](https://arxiv.org/abs/1909.07137)
 
 9、[Depth Completion from Sparse LiDAR Data with Depth-Normal Constraints](https://arxiv.org/pdf/1910.06727v1.pdf)
+
+### 深度图修复
+
+#### 基于Kinect的深度图修复
+
+> 主要有高斯滤波、双边滤波、插值、多尺度各向异性扩散、连通域分析
+
+#### paper
+
+1. 基于Kinect的深度图像修复技术研究
+2. 深度图像自适应邻域修复方法
+
+# 软件&系统开发
+
+## Github链接
+
+1. https://github.com/DovAmir/awesome-design-patterns
+
