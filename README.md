@@ -1270,6 +1270,12 @@ https://github.com/YoujieXia/Awesome-SLAM
 >
 > 主要有整体方式、霍夫投票方式、Keypoint-based方式和Dense Correspondence方式
 
+## 标注工具
+
+1. LabelFusion:https://github.com/RobotLocomotion/LabelFusion
+
+
+
 ## 实现方式不同
 
 ### 整体方式
@@ -1394,4 +1400,3 @@ https://github.com/YoujieXia/Awesome-SLAM
 ## Github链接
 
 1. https://github.com/DovAmir/awesome-design-patterns
-
